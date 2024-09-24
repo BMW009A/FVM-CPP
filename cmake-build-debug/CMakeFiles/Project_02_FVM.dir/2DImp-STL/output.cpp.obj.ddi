@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\Project_02_FVM.dir\\2DImp-STL\\output.cpp.obj",
+            "outputs": [
+                "C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\Project_02_FVM.dir\\2DImp-STL\\output.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

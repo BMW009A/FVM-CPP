@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj: dyndep
+

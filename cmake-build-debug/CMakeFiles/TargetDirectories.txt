@@ -1,0 +1,3 @@
+C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/Project_02_FVM.dir
+C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
