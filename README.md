@@ -5,7 +5,7 @@ may forget something.
 ## 2D Diffusion equation (STL version)
 The govern equation is:
 
-$$\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} \right) \tag{1}$$
+$$ \frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} \right) $$
 
 The finite difference approximation for the 2D heat equation is:
 $$
