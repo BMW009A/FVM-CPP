@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Project_02_FVM 2DImp-STL/main.cpp
         2DImp-STL/output.cpp
-        2DImp-STL/output.h)
+        2DImp-STL/output.hpp)

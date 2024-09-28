@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include "output.h"
+#include "output.hpp"
 
 using namespace std;
 

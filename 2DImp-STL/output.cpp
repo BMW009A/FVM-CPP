@@ -1,7 +1,8 @@
 //
 // Created by QCZ on 9/24/2024.
 //
-#include "output.h"
+
+#include "output.hpp"
 #include <fstream>
 #include <iostream>
 #include <vector>
