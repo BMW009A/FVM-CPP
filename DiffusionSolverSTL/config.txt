@@ -1,0 +1,32 @@
+######################## Simulation Settings #######################
+2      Dimension       - 2 for 2D, 3 for 3D
+2000   time_steps      - Number of time steps
+100    output_stride   - Output frequency
+
+######################## Grid Settings (common for 2D and 3D) ########################
+1.0    length_x        - Length in x-direction [m]
+1.0    length_y        - Length in y-direction [m]
+1.0    length_z        - Length in z-direction [m] (only used in 3D)
+20     N_x             - Number of grid points in x-direction
+20     N_y             - Number of grid points in y-direction
+20     N_z             - Number of grid points in z-direction (only used in 3D)
+
+######################## Physical Properties ########################
+209.5  thermal_conductivity - Thermal conductivity [W/mK]
+2700.0 density             - Density [kg/m³]
+900.0  specific_heat        - Specific heat capacity [J/kgK]
+
+######################## Boundary Conditions ########################
+300.0  temperature_low      - Low temperature boundary [K]
+500.0  temperature_high     - High temperature boundary [K]
+
+######################## Solver Parameters ########################
+0.01   convergence_criterion - Convergence criterion for iterative solvers
+"explicit" solver_type       - Solver type: "explicit", "implicit", "SIMPLE", etc.
+0.7    relaxation_factor     - Relaxation factor (used in SIMPLE algorithm)
+
+######################## Linear System Settings ########################
+"PCG"  linear_solver_type     - Linear solver type: "PCG", "Gauss-Seidel", etc.
+1000   max_iterations         - Maximum number of iterations for the solver
+1e-6   solver_tolerance       - Tolerance for convergence
+"None" preconditioner_type    - Preconditioner type: "None", "Jacobi", "Incomplete Cholesky", etc.

@@ -7,9 +7,16 @@
 #include "ImplicitScheme.hpp"
 #include "CrankNicolsonScheme.hpp"
 #include "SchemeType.hpp"
+#include "ConfigParser.hpp"
 
 int main() {
 
+    ConfigParser parser;
+
+    try{
+        // Parse the configuration file
+
+    }
 
     // Set up simulation parameters
     SimulationParameters params(L, N, TL, TH, crit, NO, ST, thermalConductivity, density, specificHeat);

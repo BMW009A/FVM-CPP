@@ -25,4 +25,13 @@ add_executable(Project_02_FVM 2DImp-STL/main.cpp
         DiffusionSolverSTL/Output.hpp
         DiffusionSolverSTL/Grid.cpp
         DiffusionSolverSTL/Grid.hpp
-        DiffusionSolverSTL/SchemeType.hpp)
+        DiffusionSolverSTL/SchemeType.hpp
+        DiffusionSolverSTL/ConfigParser.cpp
+        DiffusionSolverSTL/ConfigParser.hpp
+        DiffusionSolverSTL/PCG_solver.c
+        DiffusionSolverSTL/PCG_solver.h
+        DiffusionSolverSTL/linear_algebra.c
+        DiffusionSolverSTL/linear_algebra.h
+        DiffusionSolverSTL/preconditioner.c
+        DiffusionSolverSTL/preconditioner.h
+)
