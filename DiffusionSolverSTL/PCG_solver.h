@@ -9,7 +9,7 @@
 extern "C" {
 #endif
 
-int pcg_solver(const double *A, const double *B, double *x, int n, int max_iter, double tol);
+int pcg_solver(const double *A, const double *b, double *x, int n, int max_iter, double tol, const char* preconditioner_type);
 
 #ifdef __cpluscplus
 }
