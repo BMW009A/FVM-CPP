@@ -41,244 +41,168 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target fvm_lib
+
+
+#############################################
+# Order-only phony target for fvm_lib
+
+build cmake_object_order_depends_target_fvm_lib: phony || .
+
+build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\PCG_solver.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\PCG_solver.c || cmake_object_order_depends_target_fvm_lib
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\fvm_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
+  TARGET_PDB = fvm_lib.pdb
+
+build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\linear_algebra.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\linear_algebra.c || cmake_object_order_depends_target_fvm_lib
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\fvm_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
+  TARGET_PDB = fvm_lib.pdb
+
+build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\preconditioner.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\preconditioner.c || cmake_object_order_depends_target_fvm_lib
+  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\fvm_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
+  TARGET_PDB = fvm_lib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target fvm_lib
+
+
+#############################################
+# Link the static library fvm_lib.lib
+
+build fvm_lib.lib: C_STATIC_LIBRARY_LINKER__fvm_lib_Debug CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\PCG_solver.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\linear_algebra.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\preconditioner.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = CMakeFiles\fvm_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
+  TARGET_FILE = fvm_lib.lib
+  TARGET_PDB = fvm_lib.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Project_02_FVM
 
 
 #############################################
 # Order-only phony target for Project_02_FVM
 
-build cmake_object_order_depends_target_Project_02_FVM: phony || .
+build cmake_object_order_depends_target_Project_02_FVM: phony || cmake_object_order_depends_target_fvm_lib
 
-build CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\main.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.ddi
+build CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\main.cpp || cmake_object_order_depends_target_Project_02_FVM
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\main.cpp | CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
   OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\2DImp-STL
   TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
   TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
 
-build CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\output.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.ddi
+build CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\output.cpp || cmake_object_order_depends_target_Project_02_FVM
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\output.cpp | CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
   OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\2DImp-STL
   TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
   TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
 
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\main.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.ddi
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\main.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\main.cpp || cmake_object_order_depends_target_Project_02_FVM
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\main.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\TimeStepping.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\TimeStepping.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ExplicitScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ExplicitScheme.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ImplicitScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ImplicitScheme.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\CrankNicolsonScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\CrankNicolsonScheme.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\HeatSolver.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\HeatSolver.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\SimulationParameters.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\SimulationParameters.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Convergence.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Convergence.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Output.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Output.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Grid.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\Grid.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.ddi: CXX_SCAN__Project_02_FVM_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ConfigParser.cpp || cmake_object_order_depends_target_Project_02_FVM
-  DEP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.ddi
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJ_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.ddi.i
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj: CXX_COMPILER__Project_02_FVM_scanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\ConfigParser.cpp | CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.modmap || cmake_object_order_depends_target_Project_02_FVM CMakeFiles\Project_02_FVM.dir\CXX.dd
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.modmap
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
-  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
-  TARGET_PDB = Project_02_FVM.pdb
-  dyndep = CMakeFiles/Project_02_FVM.dir/CXX.dd
-
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\PCG_solver.c.obj: C_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\PCG_solver.c || cmake_object_order_depends_target_Project_02_FVM
-  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
-  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
   TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
   TARGET_PDB = Project_02_FVM.pdb
 
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\linear_algebra.c.obj: C_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\linear_algebra.c || cmake_object_order_depends_target_Project_02_FVM
-  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\TimeStepping.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\TimeStepping.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
   TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
   TARGET_PDB = Project_02_FVM.pdb
 
-build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\preconditioner.c.obj: C_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\preconditioner.c || cmake_object_order_depends_target_Project_02_FVM
-  FLAGS = /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ExplicitScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ExplicitScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
   TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
   TARGET_PDB = Project_02_FVM.pdb
 
-build CMakeFiles\Project_02_FVM.dir\CXX.dd | C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\CMakeFiles\Project_02_FVM.dir\CXXModules.json CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.modmap CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.modmap: CXX_DYNDEP__Project_02_FVM_Debug CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj.ddi CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj.ddi | C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\CMakeFiles\Project_02_FVM.dir\CXXDependInfo.json
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ImplicitScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ImplicitScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\CrankNicolsonScheme.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\CrankNicolsonScheme.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\HeatSolver.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\HeatSolver.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\SimulationParameters.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\SimulationParameters.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Convergence.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Convergence.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Output.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Output.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Grid.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Grid.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ConfigParser.cpp.obj: CXX_COMPILER__Project_02_FVM_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ConfigParser.cpp || cmake_object_order_depends_target_Project_02_FVM
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src
+  TARGET_COMPILE_PDB = CMakeFiles\Project_02_FVM.dir\
+  TARGET_PDB = Project_02_FVM.pdb
 
 
 # =============================================================================
@@ -288,10 +212,10 @@ build CMakeFiles\Project_02_FVM.dir\CXX.dd | C$:\Users\QCZ\CLionProjects\Project
 #############################################
 # Link the executable Project_02_FVM.exe
 
-build Project_02_FVM.exe: CXX_EXECUTABLE_LINKER__Project_02_FVM_Debug CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\main.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\TimeStepping.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ExplicitScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ImplicitScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\CrankNicolsonScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\HeatSolver.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\SimulationParameters.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Convergence.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Output.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\Grid.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\ConfigParser.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\PCG_solver.c.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\linear_algebra.c.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\preconditioner.c.obj
+build Project_02_FVM.exe: CXX_EXECUTABLE_LINKER__Project_02_FVM_Debug CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\main.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\TimeStepping.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ExplicitScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ImplicitScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\CrankNicolsonScheme.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\HeatSolver.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\SimulationParameters.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Convergence.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Output.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Grid.cpp.obj CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ConfigParser.cpp.obj | fvm_lib.lib || fvm_lib.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = fvm_lib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\Project_02_FVM.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -299,6 +223,94 @@ build Project_02_FVM.exe: CXX_EXECUTABLE_LINKER__Project_02_FVM_Debug CMakeFiles
   TARGET_FILE = Project_02_FVM.exe
   TARGET_IMPLIB = Project_02_FVM.lib
   TARGET_PDB = Project_02_FVM.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_pcg
+
+
+#############################################
+# Order-only phony target for test_pcg
+
+build cmake_object_order_depends_target_test_pcg: phony || cmake_object_order_depends_target_fvm_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles\test_pcg.dir\DiffusionSolverSTL\test\test_pcg.cpp.obj: CXX_COMPILER__test_pcg_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_pcg.cpp || cmake_object_order_depends_target_test_pcg
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\test_pcg.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_pcg.dir\DiffusionSolverSTL\test
+  TARGET_COMPILE_PDB = CMakeFiles\test_pcg.dir\
+  TARGET_PDB = test_pcg.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_pcg
+
+
+#############################################
+# Link the executable test_pcg.exe
+
+build test_pcg.exe test_pcg[1]_tests.cmake | ${cmake_ninja_workdir}test_pcg[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_pcg_Debug CMakeFiles\test_pcg.dir\DiffusionSolverSTL\test\test_pcg.cpp.obj | fvm_lib.lib lib\gtest_main.lib lib\gtest.lib || fvm_lib.lib lib\gtest.lib lib\gtest_main.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = fvm_lib.lib  lib\gtest_main.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_pcg.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=test_pcg -D TEST_EXECUTABLE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_pcg.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_pcg_TESTS -D CTEST_FILE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_pcg[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = CMakeFiles\test_pcg.dir\
+  TARGET_FILE = test_pcg.exe
+  TARGET_IMPLIB = test_pcg.lib
+  TARGET_PDB = test_pcg.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_linear_algebra
+
+
+#############################################
+# Order-only phony target for test_linear_algebra
+
+build cmake_object_order_depends_target_test_linear_algebra: phony || cmake_object_order_depends_target_fvm_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test\test_linear_algebra.cpp.obj: CXX_COMPILER__test_linear_algebra_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp || cmake_object_order_depends_target_test_linear_algebra
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\test_linear_algebra.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test
+  TARGET_COMPILE_PDB = CMakeFiles\test_linear_algebra.dir\
+  TARGET_PDB = test_linear_algebra.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_linear_algebra
+
+
+#############################################
+# Link the executable test_linear_algebra.exe
+
+build test_linear_algebra.exe test_linear_algebra[1]_tests.cmake | ${cmake_ninja_workdir}test_linear_algebra[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_linear_algebra_Debug CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test\test_linear_algebra.cpp.obj | fvm_lib.lib lib\gtest_main.lib lib\gtest.lib || fvm_lib.lib lib\gtest.lib lib\gtest_main.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = fvm_lib.lib  lib\gtest_main.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_linear_algebra.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=test_linear_algebra -D TEST_EXECUTABLE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_linear_algebra_TESTS -D CTEST_FILE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = CMakeFiles\test_linear_algebra.dir\
+  TARGET_FILE = test_linear_algebra.exe
+  TARGET_IMPLIB = test_linear_algebra.lib
+  TARGET_PDB = test_linear_algebra.pdb
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles\test.util
 
 
 #############################################
@@ -323,10 +335,436 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/QCZ/CLionProjects/Project-02-FVM/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build _deps\googletest-build\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\test: phony _deps\googletest-build\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\googletest-build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\googletest-build\edit_cache: phony _deps\googletest-build\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\googletest-build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\QCZ\CLionProjects\Project-02-FVM -BC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\rebuild_cache: phony _deps\googletest-build\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\googletest-build\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\googletest-build\CMakeFiles\install.util: CUSTOM_COMMAND _deps\googletest-build\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\install: phony _deps\googletest-build\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\googletest-build\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\googletest-build\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\install\local: phony _deps\googletest-build\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || .
+
+build _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src
+  TARGET_COMPILE_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+build _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
+  TARGET_COMPILE_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\gmock.lib
+
+build lib\gmock.lib: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gmock.lib
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || .
+
+build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock_main
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src
+  TARGET_COMPILE_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock_main
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+build _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\src\gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googlemock -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\gmock_main.lib
+
+build lib\gmock_main.lib: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gmock_main.lib
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build _deps\googletest-build\googlemock\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googlemock\test: phony _deps\googletest-build\googlemock\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\googletest-build\googlemock\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\googletest-build\googlemock\edit_cache: phony _deps\googletest-build\googlemock\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\googletest-build\googlemock\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\QCZ\CLionProjects\Project-02-FVM -BC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googlemock\rebuild_cache: phony _deps\googletest-build\googlemock\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\googletest-build\googlemock\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\googletest-build\googlemock\CMakeFiles\install.util: CUSTOM_COMMAND _deps\googletest-build\googlemock\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googlemock\install: phony _deps\googletest-build\googlemock\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\googletest-build\googlemock\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\googletest-build\googlemock\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googlemock\install\local: phony _deps\googletest-build\googlemock\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || .
+
+build _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gtest
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
+  TARGET_COMPILE_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\gtest.lib
+
+build lib\gtest.lib: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gtest.lib
+  TARGET_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\src\gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
+  INCLUDES = -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
+  TARGET_COMPILE_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\gtest_main.lib
+
+build lib\gtest_main.lib: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj || lib\gtest.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gtest_main.lib
+  TARGET_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build _deps\googletest-build\googletest\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googletest\test: phony _deps\googletest-build\googletest\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps\googletest-build\googletest\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps\googletest-build\googletest\edit_cache: phony _deps\googletest-build\googletest\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps\googletest-build\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\QCZ\CLionProjects\Project-02-FVM -BC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googletest\rebuild_cache: phony _deps\googletest-build\googletest\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps\googletest-build\googletest\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps\googletest-build\googletest\CMakeFiles\install.util: CUSTOM_COMMAND _deps\googletest-build\googletest\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googletest\install: phony _deps\googletest-build\googletest\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps\googletest-build\googletest\CMakeFiles\install\local.util: CUSTOM_COMMAND _deps\googletest-build\googletest\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps\googletest-build\googletest\install\local: phony _deps\googletest-build\googletest\CMakeFiles\install\local.util
+
 # =============================================================================
 # Target aliases.
 
 build Project_02_FVM: phony Project_02_FVM.exe
+
+build fvm_lib: phony fvm_lib.lib
+
+build gmock: phony lib\gmock.lib
+
+build gmock.lib: phony lib\gmock.lib
+
+build gmock_main: phony lib\gmock_main.lib
+
+build gmock_main.lib: phony lib\gmock_main.lib
+
+build gtest: phony lib\gtest.lib
+
+build gtest.lib: phony lib\gtest.lib
+
+build gtest_main: phony lib\gtest_main.lib
+
+build gtest_main.lib: phony lib\gtest_main.lib
+
+build test_linear_algebra: phony test_linear_algebra.exe
+
+build test_pcg: phony test_pcg.exe
 
 # =============================================================================
 # Folder targets.
@@ -336,7 +774,28 @@ build Project_02_FVM: phony Project_02_FVM.exe
 #############################################
 # Folder: C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug
 
-build all: phony Project_02_FVM.exe
+build all: phony fvm_lib.lib Project_02_FVM.exe test_pcg.exe test_linear_algebra.exe _deps\googletest-build\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/_deps/googletest-build
+
+build _deps\googletest-build\all: phony _deps\googletest-build\googlemock\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/_deps/googletest-build/googlemock
+
+build _deps\googletest-build\googlemock\all: phony lib\gmock.lib lib\gmock_main.lib _deps\googletest-build\googletest\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/_deps/googletest-build/googletest
+
+build _deps\googletest-build\googletest\all: phony lib\gtest.lib lib\gtest_main.lib
 
 # =============================================================================
 # Built-in targets
@@ -345,14 +804,14 @@ build all: phony Project_02_FVM.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FetchContent.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPython.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPython\Support.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\GoogleTest.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake: phony
+build C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FetchContent.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPython.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPython\Support.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\GoogleTest.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\JetBrains\CLion$ 2023.1.3\bin\cmake\win\x64\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake _deps\googletest-src\CMakeLists.txt _deps\googletest-src\googlemock\CMakeLists.txt _deps\googletest-src\googlemock\cmake\gmock.pc.in _deps\googletest-src\googlemock\cmake\gmock_main.pc.in _deps\googletest-src\googletest\CMakeLists.txt _deps\googletest-src\googletest\cmake\Config.cmake.in _deps\googletest-src\googletest\cmake\gtest.pc.in _deps\googletest-src\googletest\cmake\gtest_main.pc.in _deps\googletest-src\googletest\cmake\internal_utils.cmake: phony
 
 
 #############################################

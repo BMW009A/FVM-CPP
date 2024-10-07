@@ -3,3 +3,29 @@ build CMakeFiles\Project_02_FVM.dir\2DImp-STL\main.cpp.obj: dyndep
 
 build CMakeFiles\Project_02_FVM.dir\2DImp-STL\output.cpp.obj: dyndep
 
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\main.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\TimeStepping.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ExplicitScheme.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ImplicitScheme.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\CrankNicolsonScheme.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\HeatSolver.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\SimulationParameters.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Convergence.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Output.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\Grid.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\src\ConfigParser.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\test\test_linear_algebra.cpp.obj: dyndep
+
+build CMakeFiles\Project_02_FVM.dir\DiffusionSolverSTL\test\test_pcg.cpp.obj: dyndep
+

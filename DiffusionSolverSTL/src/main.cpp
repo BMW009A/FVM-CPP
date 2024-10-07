@@ -19,20 +19,20 @@ int main() {
     }
 
     // Set up simulation parameters
-    SimulationParameters params(L, N, TL, TH, crit, NO, ST, thermalConductivity, density, specificHeat);
+//    SimulationParameters params(L, N, TL, TH, crit, NO, ST, thermalConductivity, density, specificHeat);
 
     // Select the time-stepping scheme
-    SchemeType scheme = SchemeType::Explicit;
+//    SchemeType scheme = SchemeType::Explicit;
 
     // Instantiate the appropriate time-stepping scheme
-    std::unique_ptr<TimeStepping> timeStepScheme;
+//    std::unique_ptr<TimeStepping> timeStepScheme;
 
     if (scheme == SchemeType::Explicit){
         timeStepScheme = std::make_unique<ExplicitScheme>();
     } else if (scheme == SchemeType::Implicit) {
-        timeStepScheme == std::make_unique<ImplicitScheme>()
+        timeStepScheme == std::make_unique<ImplicitScheme>();
     } else if (scheme == SchemeType::CrankNicolson) {
-        timeStepScheme == std::make_unique<CrankNicolson>()
+        timeStepScheme == std::make_unique<CrankNicolson>();
     }
 
     // Create the solver and pass the time-stepping scheme

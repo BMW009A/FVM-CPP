@@ -20,7 +20,10 @@
  *            return x_k+1 as result;
  */
 
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 #include "PCG_solver.h"
 #include "linear_algebra.h"
 #include "preconditioner.h"
