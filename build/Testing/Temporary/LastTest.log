@@ -1,0 +1,35 @@
+Start testing: Oct 07 16:46 Tokyo Standard Time
+----------------------------------------------------------
+Unable to find executable: test_pcg_NOT_BUILT
+1/2 Testing: test_pcg_NOT_BUILT
+1/2 Test: test_pcg_NOT_BUILT
+Command: ""
+Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
+"test_pcg_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_pcg_NOT_BUILT" end time: Oct 07 16:46 Tokyo Standard Time
+"test_pcg_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: test_linear_algebra_NOT_BUILT
+2/2 Testing: test_linear_algebra_NOT_BUILT
+2/2 Test: test_linear_algebra_NOT_BUILT
+Command: ""
+Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
+"test_linear_algebra_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_linear_algebra_NOT_BUILT" end time: Oct 07 16:46 Tokyo Standard Time
+"test_linear_algebra_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 07 16:46 Tokyo Standard Time

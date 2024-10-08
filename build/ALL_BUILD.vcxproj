@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5131F1A5-8FC8-3858-9481-1C2CA74E0D38}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\include;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\include;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\include;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\include;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/QCZ/CLionProjects/Project-02-FVM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build --check-stamp-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.26\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/QCZ/CLionProjects/Project-02-FVM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build --check-stamp-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.26\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/QCZ/CLionProjects/Project-02-FVM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build --check-stamp-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.26\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/QCZ/CLionProjects/Project-02-FVM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build --check-stamp-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\3.26.4\CMakeSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent.cmake;C:\mingw64\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\mingw64\share\cmake-3.26\Modules\GoogleTest.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\QCZ\CLionProjects\Project-02-FVM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\ZERO_CHECK.vcxproj">
+      <Project>{205EFC7E-41F2-307E-8278-8C8D4144FDCA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\Project_02_FVM.vcxproj">
+      <Project>{C642D877-0192-3909-A490-BAB43CB51754}</Project>
+      <Name>Project_02_FVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\fvm_lib.vcxproj">
+      <Project>{1C15D346-B5D5-322A-84F8-EB0B80291755}</Project>
+      <Name>fvm_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{9DDA2573-237A-3BA2-8B4A-AECDB36AAEF4}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googlemock\gmock_main.vcxproj">
+      <Project>{7BD8C8B1-39F7-3FD9-A354-E2365B49B27E}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{84367E9C-294C-38DB-BB53-D55872299474}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{EBB4C871-6890-3A72-9FBB-1360575B3BBB}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\test_linear_algebra.vcxproj">
+      <Project>{E0CE9C94-E5F0-3684-926D-7E72380DF860}</Project>
+      <Name>test_linear_algebra</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\test_pcg.vcxproj">
+      <Project>{4069EC7A-E6CE-39B7-87C9-3D8AAA0BBDB1}</Project>
+      <Name>test_pcg</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\fvm_lib.dir\\DiffusionSolverSTL\\test\\test_linear_algebra.cpp.obj",
+            "outputs": [
+                "C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\fvm_lib.dir\\DiffusionSolverSTL\\test\\test_linear_algebra.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

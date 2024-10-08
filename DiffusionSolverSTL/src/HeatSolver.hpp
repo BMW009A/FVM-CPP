@@ -10,6 +10,8 @@
 #include "Grid.hpp"
 #include "TimeStepping.hpp"
 #include "SimulationParameters.hpp"
+#include "Convergence.hpp"
+#include "Output.hpp"
 
 using namespace std;
 
@@ -26,8 +28,8 @@ private:
 
     Grid grid;
     unique_ptr<TimeStepping> timeStepping;
-//    Convergence convergence;
-//    Output output;
+    Convergence convergence;
+    Output output;
 
     void initialize_temperature();
 

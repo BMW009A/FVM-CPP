@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googlemock\src\gmock-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googlemock\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{32F599EF-768D-3001-8E2E-2810B7B6FD5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

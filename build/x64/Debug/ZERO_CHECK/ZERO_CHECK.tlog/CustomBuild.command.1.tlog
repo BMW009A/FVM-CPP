@@ -1,0 +1,10 @@
+^C:\USERS\QCZ\CLIONPROJECTS\PROJECT-02-FVM\BUILD\CMAKEFILES\5C8976A833CAD9125E0972A9C4693457\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/Project_02_FVM.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

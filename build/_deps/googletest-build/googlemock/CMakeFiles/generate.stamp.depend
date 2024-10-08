@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-src/googlemock/CMakeLists.txt
+C:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-src/googlemock/cmake/gmock.pc.in
+C:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in
+C:/mingw64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake
+C:/mingw64/share/cmake-3.26/Modules/CheckIncludeFile.cmake
+C:/mingw64/share/cmake-3.26/Modules/CheckLibraryExists.cmake
+C:/mingw64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake
+C:/mingw64/share/cmake-3.26/Modules/FindPackageMessage.cmake
+C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake

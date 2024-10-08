@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Grid.hpp"
 #include "SimulationParameters.hpp"
+#include "Convergence.hpp"
 
 using namespace std;
 

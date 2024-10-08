@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\TimeStepping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ExplicitScheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ImplicitScheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\CrankNicolsonScheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\HeatSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\SimulationParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Convergence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ConfigParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\2DImp-STL\output.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\TimeStepping.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ExplicitScheme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ImplicitScheme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\CrankNicolsonScheme.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\HeatSolver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\SimulationParameters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Convergence.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Output.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\Grid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\SchemeType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\ConfigParser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\PCG_solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\linear_algebra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\preconditioner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A244D5A8-1262-3A59-88D9-59E31ABAB572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{32F599EF-768D-3001-8E2E-2810B7B6FD5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

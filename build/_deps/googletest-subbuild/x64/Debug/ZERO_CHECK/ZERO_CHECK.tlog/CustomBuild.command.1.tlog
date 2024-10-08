@@ -1,0 +1,10 @@
+^C:\USERS\QCZ\CLIONPROJECTS\PROJECT-02-FVM\BUILD\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\B5213ECCA14D05058C27110D02E857A2\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-subbuild -BC:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-subbuild/googletest-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

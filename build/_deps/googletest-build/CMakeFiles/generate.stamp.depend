@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Users/QCZ/CLionProjects/Project-02-FVM/build/_deps/googletest-src/CMakeLists.txt
+C:/mingw64/share/cmake-3.26/Modules/CMakeDependentOption.cmake
+C:/mingw64/share/cmake-3.26/Modules/GNUInstallDirs.cmake
