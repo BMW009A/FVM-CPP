@@ -6,6 +6,7 @@
 #define PROJECT_02_FVM_EXPLICITSCHEME_HPP
 
 #include "TimeStepping.hpp"
+#include "Grid.hpp"
 
 class ExplicitScheme : public TimeStepping {
 public:

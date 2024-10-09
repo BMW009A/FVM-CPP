@@ -19,10 +19,14 @@ public:
                       Grid& grid, int time_step_num, int output_stride,
                       vector<vector<vector<double>>>& Ts) = 0;
 
-
-    // Function to update temperature field (common to all methods)
-    void update(vector<vector<double>>& To, const vector<vector<double>>& T, int N);
-
+    // Function to update temperature field (same for all schemes(derived classes))
+    void update(vector<vector<double>>& To, const vector<vector<double>>& T, int N) {
+        for (int j = 0; j < N + 1; ++j) {
+            for (int i = 0; i < N + 1; ++i) {
+                To[j][i] = T[j][i];
+            }
+        }
+    }
 };
 
 #endif //PROJECT_02_FVM_TIMESTEPPING_HPP
