@@ -16,9 +16,9 @@ HeatSolver::HeatSolver(SimulationParameters &params, unique_ptr<TimeStepping> ti
       Tp(params.N + 2, vector<double>(params.N + 2, params.TL)),
       To(params.N + 2, vector<double>(params.N + 2, params.TL)),
       grid(params.N, params.L, params.lm, params.rhoCp, params.dt),
-      timeStepping(std::move(timeSteppingScheme)), convergence(params.crit, params.N) {}
+      timeStepping(std::move(timeSteppingScheme))) {}
 
-void HeatSolver::initialize_temperature() {
+void HeatSolver::initialization() {
 
     for (int j = 0; j < params.N + 2; ++j) {
         for (int i = 0; i < params.N + 2; ++i) {
@@ -34,19 +34,19 @@ void HeatSolver::initialize_temperature() {
 void HeatSolver::run_simulation() {
 
     grid.initialize_coefficients();  // Initialize the coefficients of the grid
-    initialize_temperature();  // Initialize the boundary condition
+    initialization();  // Initialize the boundary condition
 
     for (int n = 0; n < params.NO; ++n) {
         timeStepping->step(T, To, grid, n, params.ST, Ts);
 
-        if (convergence.check(T, Tp)) {
+        if (convergence.check_convergence(T)) {
             cout << "Converged at time step " << n << endl;
             break;
         }
 
-        timeStepping->update(To, T, params.N);
+        TimeStepping::update(To, T, params.N);
     }
 
-    output.output_to_file(Ts, "computation_result.txt");
+    output.write_header({"Time ", "Temperature "});
 
 }

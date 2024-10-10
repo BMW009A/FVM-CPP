@@ -31,7 +31,7 @@ private:
     Convergence convergence;
     Output output;
 
-    void initialize_temperature();
+    void initialization();
 
 };
 
