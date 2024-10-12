@@ -23,27 +23,24 @@ public:
 
 private:
     SimulationParameters& params;  // Reference to simulation parameters
-    vector<vector<double>> T, Tp, To;
-    vector<vector<vector<double>>> Ts;
-
     Grid grid;
     unique_ptr<TimeStepping> timeStepping;
     Convergence convergence;
     Output output;
 
+    // Data structures for 2D and 3D temperature fields
+    vector<vector<double>> T2D, Tp2D, To2D;
+    vector<vector<vector<double>>> T3D, Tp3D, To3D;
+    vector<vector<vector<double>>> Ts2D;
+    vector<vector<vector<vector<double>>>> Ts3D;
+
+    // Initialize temperature fields based on dimensionality
     void initialization();
 
+    // Method to run 2D and 3D simulations
+    void run_2d_simulation();
+    void run_3d_simulation();
+
 };
-
-
-
-
-
-
-
-
-
-
-
 
 #endif //PROJECT_02_FVM_HEATSOLVER_HPP
