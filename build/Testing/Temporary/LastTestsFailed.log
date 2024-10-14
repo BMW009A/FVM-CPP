@@ -1,2 +1,2 @@
-1:test_pcg_NOT_BUILT
-2:test_linear_algebra_NOT_BUILT
+1:MatrixMultiplicationTest.SmallMatrix
+2:MatrixMultiplicationTest.LargeMatrix

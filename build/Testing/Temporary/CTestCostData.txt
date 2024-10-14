@@ -1,5 +1,7 @@
 test_pcg_NOT_BUILT 0 0
 test_linear_algebra_NOT_BUILT 0 0
+MatrixMultiplicationTest.SmallMatrix 0 0
+MatrixMultiplicationTest.LargeMatrix 0 0
 ---
-test_pcg_NOT_BUILT
-test_linear_algebra_NOT_BUILT
+MatrixMultiplicationTest.SmallMatrix
+MatrixMultiplicationTest.LargeMatrix

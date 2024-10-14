@@ -173,10 +173,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\Project_02_FVM.vcxproj">
-      <Project>{C642D877-0192-3909-A490-BAB43CB51754}</Project>
-      <Name>Project_02_FVM</Name>
-    </ProjectReference>
     <ProjectReference Include="C:\Users\QCZ\CLionProjects\Project-02-FVM\build\fvm_lib.vcxproj">
       <Project>{1C15D346-B5D5-322A-84F8-EB0B80291755}</Project>
       <Name>fvm_lib</Name>

@@ -54,7 +54,7 @@ void ConfigParser::validate_config(const unordered_map<std::string, std::string>
 
     // Required parameters (more parameters can be added as the project becomes larger)
     vector<string> required_keys = {"Dimension", "Time_steps", "Output_stride",
-                                    "Length_x", "Length_x", "Length_x", "N_x", "N_y", "N_z",
+                                    "Length_x", "Length_y", "Length_z", "N_x", "N_y", "N_z",
                                     "Thermal_conductivity", "Density", "Specific_heat",
                                     "Temperature_low", "Temperature_high",
                                     "Convergence_criterion", "Solver_type", "Relaxation_factor",

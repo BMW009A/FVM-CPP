@@ -1,35 +1,86 @@
-Start testing: Oct 07 16:46 Tokyo Standard Time
+Start testing: Oct 14 16:12 Tokyo Standard Time
 ----------------------------------------------------------
-Unable to find executable: test_pcg_NOT_BUILT
-1/2 Testing: test_pcg_NOT_BUILT
-1/2 Test: test_pcg_NOT_BUILT
-Command: ""
+1/2 Testing: MatrixMultiplicationTest.SmallMatrix
+1/2 Test: MatrixMultiplicationTest.SmallMatrix
+Command: "C:/Users/QCZ/CLionProjects/Project-02-FVM/build/Debug/test_linear_algebra.exe" "--gtest_filter=MatrixMultiplicationTest.SmallMatrix" "--gtest_also_run_disabled_tests"
 Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
-"test_pcg_NOT_BUILT" start time: 
+"MatrixMultiplicationTest.SmallMatrix" start time: Oct 14 16:12 Tokyo Standard Time
 Output:
 ----------------------------------------------------------
+Running main() from C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = MatrixMultiplicationTest.SmallMatrix
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatrixMultiplicationTest
+[ RUN      ] MatrixMultiplicationTest.SmallMatrix
+C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp(34): error: Expected equality of these values:
+  y[i]
+    Which is: 70
+  expected[i]
+    Which is: 19
+C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp(34): error: Expected equality of these values:
+  y[i]
+    Which is: -2.4065504150822633e+63
+  expected[i]
+    Which is: 22
+C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp(34): error: Expected equality of these values:
+  y[i]
+    Which is: 174
+  expected[i]
+    Which is: 43
+C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp(34): error: Expected equality of these values:
+  y[i]
+    Which is: -2.4065504150822633e+63
+  expected[i]
+    Which is: 50
+[  FAILED  ] MatrixMultiplicationTest.SmallMatrix (0 ms)
+[----------] 1 test from MatrixMultiplicationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] MatrixMultiplicationTest.SmallMatrix
+
+ 1 FAILED TEST
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Passed.
-"test_pcg_NOT_BUILT" end time: Oct 07 16:46 Tokyo Standard Time
-"test_pcg_NOT_BUILT" time elapsed: 00:00:00
+Test Failed.
+"MatrixMultiplicationTest.SmallMatrix" end time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.SmallMatrix" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-Unable to find executable: test_linear_algebra_NOT_BUILT
-2/2 Testing: test_linear_algebra_NOT_BUILT
-2/2 Test: test_linear_algebra_NOT_BUILT
-Command: ""
+2/2 Testing: MatrixMultiplicationTest.LargeMatrix
+2/2 Test: MatrixMultiplicationTest.LargeMatrix
+Command: "C:/Users/QCZ/CLionProjects/Project-02-FVM/build/Debug/test_linear_algebra.exe" "--gtest_filter=MatrixMultiplicationTest.LargeMatrix" "--gtest_also_run_disabled_tests"
 Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
-"test_linear_algebra_NOT_BUILT" start time: 
+"MatrixMultiplicationTest.LargeMatrix" start time: Oct 14 16:12 Tokyo Standard Time
 Output:
 ----------------------------------------------------------
+Running main() from C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = MatrixMultiplicationTest.LargeMatrix
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatrixMultiplicationTest
+[ RUN      ] MatrixMultiplicationTest.LargeMatrix
+unknown file: error: SEH exception with code 0xc00000fd thrown in the test body.
+[  FAILED  ] MatrixMultiplicationTest.LargeMatrix (0 ms)
+[----------] 1 test from MatrixMultiplicationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] MatrixMultiplicationTest.LargeMatrix
+
+ 1 FAILED TEST
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Passed.
-"test_linear_algebra_NOT_BUILT" end time: Oct 07 16:46 Tokyo Standard Time
-"test_linear_algebra_NOT_BUILT" time elapsed: 00:00:00
+Test Failed.
+"MatrixMultiplicationTest.LargeMatrix" end time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.LargeMatrix" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 07 16:46 Tokyo Standard Time
+End testing: Oct 14 16:12 Tokyo Standard Time

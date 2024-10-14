@@ -30,13 +30,16 @@ public:
 
     // Grid coordinates and spacing
     vector<double> x;              // x-coordinates
-    vector<double> y;              // x-coordinates
+    vector<double> y;              // y-coordinates
+    vector<double> z;              // z-coordinates
     vector<double> dx;             // Grid spacing in x-direction
     vector<double> dy;             // Grid spacing in y-direction
+    vector<double> dz;             // Grid spacing in z-direction
 
     // Conduction coefficients
-    vector<double> ce, cw, cn, cs;      // East, West, North, South conduction coefficients
-    vector<vector<double>> co, cd;              // coefficients for the finite volume equation
+    vector<double> ce, cw, cn, cs, cf, cb;          // East, West, North, South, Front, Back conduction coefficients
+    vector<vector<double>> co2D, cd2D;              // coefficients for the finite volume equation 2D
+    vector<vector<vector<double>>> co3D, cd3D;      // coefficients for the finite volume equation 3D
 
 private:
     // Internal function to initialize grid points and spacing
