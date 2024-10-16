@@ -79,7 +79,7 @@ void Grid::initialize_coefficients() {
         for (int j = 0; j < N + 1; ++j) {
             for (int i = 0; i < N + 1; ++i) {
                 co3D[k][j][i] = rhoCp * dx[i] * dy[j] / dt;
-                cd3D[k][j][i] = co2D[j][i] + ce[i] + cw[i] + cn[j] + cs[j];
+                cd3D[k][j][i] = co3D[k][j][i] + ce[i] + cw[i] + cn[j] + cs[j];    // TODO: This is not correct for now, need derivation
             }
         }
     }

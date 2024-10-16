@@ -17,7 +17,6 @@ public:
     // Function to initialize the coefficients
     void initialize_coefficients();
 
-
     // Grid variables
     int N;
     double L;

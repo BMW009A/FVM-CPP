@@ -4,7 +4,7 @@
 /*
  * File: PCG_solver.c
  * ------------------
- * This program is source code of Pre-Condition Conjugate Gradient iterative method,
+ * This file is source code of Pre-Condition Conjugate Gradient iterative method,
  * which is use for solving the linear system Ax = b.
  *
  * Main Algorithm Steps:

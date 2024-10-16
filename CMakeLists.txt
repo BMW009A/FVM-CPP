@@ -32,39 +32,39 @@ add_library(fvm_lib
         DiffusionSolverSTL/src/preconditioner.c
 )
 
-#add_executable(Project_02_FVM
+add_executable(Project_02_FVM
 ##        2DImp-STL/main.cpp
 ##        2DImp-STL/output.cpp
 ##        2DImp-STL/output.hpp
-#        DiffusionSolverSTL/src/main.cpp
-#        DiffusionSolverSTL/src/TimeStepping.cpp
-#        DiffusionSolverSTL/src/TimeStepping.hpp
-#        DiffusionSolverSTL/src/ExplicitScheme.cpp
-#        DiffusionSolverSTL/src/ExplicitScheme.hpp
-#        DiffusionSolverSTL/src/ImplicitScheme.cpp
-#        DiffusionSolverSTL/src/ImplicitScheme.hpp
-#        DiffusionSolverSTL/src/CrankNicolsonScheme.cpp
-#        DiffusionSolverSTL/src/CrankNicolsonScheme.hpp
-#        DiffusionSolverSTL/src/HeatSolver.cpp
-#        DiffusionSolverSTL/src/HeatSolver.hpp
-#        DiffusionSolverSTL/src/SimulationParameters.cpp
-#        DiffusionSolverSTL/src/SimulationParameters.hpp
-#        DiffusionSolverSTL/src/Convergence.cpp
-#        DiffusionSolverSTL/src/Convergence.hpp
-#        DiffusionSolverSTL/src/Output.cpp
-#        DiffusionSolverSTL/src/Output.hpp
-#        DiffusionSolverSTL/src/Grid.cpp
-#        DiffusionSolverSTL/src/Grid.hpp
-#        DiffusionSolverSTL/src/SchemeType.hpp
-#        DiffusionSolverSTL/src/ConfigParser.cpp
-#        DiffusionSolverSTL/src/ConfigParser.hpp
-#        DiffusionSolverSTL/src/PCG_solver.h            # C headers explicitly added
-#        DiffusionSolverSTL/src/linear_algebra.h        # C headers explicitly added
-#        DiffusionSolverSTL/src/preconditioner.h        # C headers explicitly added
-#)
+        DiffusionSolverSTL/src/main.cpp
+        DiffusionSolverSTL/src/TimeStepping.cpp
+        DiffusionSolverSTL/src/TimeStepping.hpp
+        DiffusionSolverSTL/src/ExplicitScheme.cpp
+        DiffusionSolverSTL/src/ExplicitScheme.hpp
+        DiffusionSolverSTL/src/ImplicitScheme.cpp
+        DiffusionSolverSTL/src/ImplicitScheme.hpp
+        DiffusionSolverSTL/src/CrankNicolsonScheme.cpp
+        DiffusionSolverSTL/src/CrankNicolsonScheme.hpp
+        DiffusionSolverSTL/src/HeatSolver.cpp
+        DiffusionSolverSTL/src/HeatSolver.hpp
+        DiffusionSolverSTL/src/SimulationParameters.cpp
+        DiffusionSolverSTL/src/SimulationParameters.hpp
+        DiffusionSolverSTL/src/Convergence.cpp
+        DiffusionSolverSTL/src/Convergence.hpp
+        DiffusionSolverSTL/src/Output.cpp
+        DiffusionSolverSTL/src/Output.hpp
+        DiffusionSolverSTL/src/Grid.cpp
+        DiffusionSolverSTL/src/Grid.hpp
+        DiffusionSolverSTL/src/SchemeType.hpp
+        DiffusionSolverSTL/src/ConfigParser.cpp
+        DiffusionSolverSTL/src/ConfigParser.hpp
+        DiffusionSolverSTL/src/PCG_solver.h            # C headers explicitly added
+        DiffusionSolverSTL/src/linear_algebra.h        # C headers explicitly added
+        DiffusionSolverSTL/src/preconditioner.h        # C headers explicitly added
+)
 
 # Link the main executable with the library
-#target_link_libraries(Project_02_FVM fvm_lib)
+target_link_libraries(Project_02_FVM fvm_lib)
 
 # Add test executables (linking against Google Test and your library)
 add_executable(test_pcg

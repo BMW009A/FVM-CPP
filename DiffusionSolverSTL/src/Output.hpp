@@ -17,7 +17,7 @@ private:
 
 public:
     // Constructor to open the file for writing
-    Output(const string& filename);
+    explicit Output(const string& filename);
 
     // Method to write the header
     void write_header(const vector<string>& column_names);
