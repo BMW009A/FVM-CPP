@@ -1,10 +1,10 @@
-Start testing: Oct 14 16:12 Tokyo Standard Time
+Start testing: Oct 21 14:19 Tokyo Standard Time
 ----------------------------------------------------------
 1/2 Testing: MatrixMultiplicationTest.SmallMatrix
 1/2 Test: MatrixMultiplicationTest.SmallMatrix
 Command: "C:/Users/QCZ/CLionProjects/Project-02-FVM/build/Debug/test_linear_algebra.exe" "--gtest_filter=MatrixMultiplicationTest.SmallMatrix" "--gtest_also_run_disabled_tests"
 Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
-"MatrixMultiplicationTest.SmallMatrix" start time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.SmallMatrix" start time: Oct 21 14:19 Tokyo Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -33,11 +33,11 @@ C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_al
     Which is: -2.4065504150822633e+63
   expected[i]
     Which is: 50
-[  FAILED  ] MatrixMultiplicationTest.SmallMatrix (0 ms)
-[----------] 1 test from MatrixMultiplicationTest (0 ms total)
+[  FAILED  ] MatrixMultiplicationTest.SmallMatrix (1 ms)
+[----------] 1 test from MatrixMultiplicationTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
+[==========] 1 test from 1 test suite ran. (1 ms total)
 [  PASSED  ] 0 tests.
 [  FAILED  ] 1 test, listed below:
 [  FAILED  ] MatrixMultiplicationTest.SmallMatrix
@@ -47,7 +47,7 @@ C:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_al
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"MatrixMultiplicationTest.SmallMatrix" end time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.SmallMatrix" end time: Oct 21 14:19 Tokyo Standard Time
 "MatrixMultiplicationTest.SmallMatrix" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -55,7 +55,7 @@ Test Failed.
 2/2 Test: MatrixMultiplicationTest.LargeMatrix
 Command: "C:/Users/QCZ/CLionProjects/Project-02-FVM/build/Debug/test_linear_algebra.exe" "--gtest_filter=MatrixMultiplicationTest.LargeMatrix" "--gtest_also_run_disabled_tests"
 Directory: C:/Users/QCZ/CLionProjects/Project-02-FVM/build
-"MatrixMultiplicationTest.LargeMatrix" start time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.LargeMatrix" start time: Oct 21 14:19 Tokyo Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from C:\Users\QCZ\CLionProjects\Project-02-FVM\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -79,8 +79,8 @@ unknown file: error: SEH exception with code 0xc00000fd thrown in the test body.
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"MatrixMultiplicationTest.LargeMatrix" end time: Oct 14 16:12 Tokyo Standard Time
+"MatrixMultiplicationTest.LargeMatrix" end time: Oct 21 14:19 Tokyo Standard Time
 "MatrixMultiplicationTest.LargeMatrix" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 14 16:12 Tokyo Standard Time
+End testing: Oct 21 14:19 Tokyo Standard Time

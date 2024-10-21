@@ -5,11 +5,29 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+# Enable verbose makefile generation (optional for debugging purposes)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
 include(FetchContent)
 FetchContent_Declare(
         googletest
         URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
 )
+
+# For macOS: Enable macOS-specific compiler/linker flags
+if (APPLE)
+    # Choose the appropriate architecture-specific flags
+    if (CMAKE_SYSTEM_PROCESSOR MATCHES "arm64")
+        set(CMAKE_OSX_ARCHITECTURES "arm64")
+    elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+        set(CMAKE_OSX_ARCHITECTURES "x86_64")
+    endif ()
+
+    message(STATUS "Configuring for macOS...")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20 -Wall -Wextra -Wpedantic")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+endif ()
 
 # For Windows: Prevent overriding the parent project's compiler/linker settings
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
@@ -32,39 +50,39 @@ add_library(fvm_lib
         DiffusionSolverSTL/src/preconditioner.c
 )
 
-add_executable(Project_02_FVM
-##        2DImp-STL/main.cpp
-##        2DImp-STL/output.cpp
-##        2DImp-STL/output.hpp
-        DiffusionSolverSTL/src/main.cpp
-        DiffusionSolverSTL/src/TimeStepping.cpp
-        DiffusionSolverSTL/src/TimeStepping.hpp
-        DiffusionSolverSTL/src/ExplicitScheme.cpp
-        DiffusionSolverSTL/src/ExplicitScheme.hpp
-        DiffusionSolverSTL/src/ImplicitScheme.cpp
-        DiffusionSolverSTL/src/ImplicitScheme.hpp
-        DiffusionSolverSTL/src/CrankNicolsonScheme.cpp
-        DiffusionSolverSTL/src/CrankNicolsonScheme.hpp
-        DiffusionSolverSTL/src/HeatSolver.cpp
-        DiffusionSolverSTL/src/HeatSolver.hpp
-        DiffusionSolverSTL/src/SimulationParameters.cpp
-        DiffusionSolverSTL/src/SimulationParameters.hpp
-        DiffusionSolverSTL/src/Convergence.cpp
-        DiffusionSolverSTL/src/Convergence.hpp
-        DiffusionSolverSTL/src/Output.cpp
-        DiffusionSolverSTL/src/Output.hpp
-        DiffusionSolverSTL/src/Grid.cpp
-        DiffusionSolverSTL/src/Grid.hpp
-        DiffusionSolverSTL/src/SchemeType.hpp
-        DiffusionSolverSTL/src/ConfigParser.cpp
-        DiffusionSolverSTL/src/ConfigParser.hpp
-        DiffusionSolverSTL/src/PCG_solver.h            # C headers explicitly added
-        DiffusionSolverSTL/src/linear_algebra.h        # C headers explicitly added
-        DiffusionSolverSTL/src/preconditioner.h        # C headers explicitly added
-)
+#add_executable(Project_02_FVM
+###        2DImp-STL/main.cpp
+###        2DImp-STL/output.cpp
+###        2DImp-STL/output.hpp
+#        DiffusionSolverSTL/src/main.cpp
+#        DiffusionSolverSTL/src/TimeStepping.cpp
+#        DiffusionSolverSTL/src/TimeStepping.hpp
+#        DiffusionSolverSTL/src/ExplicitScheme.cpp
+#        DiffusionSolverSTL/src/ExplicitScheme.hpp
+#        DiffusionSolverSTL/src/ImplicitScheme.cpp
+#        DiffusionSolverSTL/src/ImplicitScheme.hpp
+#        DiffusionSolverSTL/src/CrankNicolsonScheme.cpp
+#        DiffusionSolverSTL/src/CrankNicolsonScheme.hpp
+#        DiffusionSolverSTL/src/HeatSolver.cpp
+#        DiffusionSolverSTL/src/HeatSolver.hpp
+#        DiffusionSolverSTL/src/SimulationParameters.cpp
+#        DiffusionSolverSTL/src/SimulationParameters.hpp
+#        DiffusionSolverSTL/src/Convergence.cpp
+#        DiffusionSolverSTL/src/Convergence.hpp
+#        DiffusionSolverSTL/src/Output.cpp
+#        DiffusionSolverSTL/src/Output.hpp
+#        DiffusionSolverSTL/src/Grid.cpp
+#        DiffusionSolverSTL/src/Grid.hpp
+#        DiffusionSolverSTL/src/SchemeType.hpp
+#        DiffusionSolverSTL/src/ConfigParser.cpp
+#        DiffusionSolverSTL/src/ConfigParser.hpp
+#        DiffusionSolverSTL/src/PCG_solver.h            # C headers explicitly added
+#        DiffusionSolverSTL/src/linear_algebra.h        # C headers explicitly added
+#        DiffusionSolverSTL/src/preconditioner.h        # C headers explicitly added
+#)
 
 # Link the main executable with the library
-target_link_libraries(Project_02_FVM fvm_lib)
+#target_link_libraries(Project_02_FVM fvm_lib)
 
 # Add test executables (linking against Google Test and your library)
 add_executable(test_pcg

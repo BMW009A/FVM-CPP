@@ -16,45 +16,44 @@ TEST(MatrixMultiplicationTest, SmallMatrix) {
             3, 4
     };
     double B[] = {
-            5, 6,
-            7, 8
+            5, 6
     };
 
-    double y[4];
+    double y[2];
 
     double expected[] = {
-            19, 22,
-            43, 50
+            17,
+            39
     };
 
-    mat_vec_mult(A, B, y, 4);
+    mat_vec_mult(A, B, y, 2);
 
     // Verify that each element matches the expected result
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 0; i < 2; ++i) {
         EXPECT_DOUBLE_EQ(y[i], expected[i]);
     }
 }
 
 // Test for the large-size matrix multiplication
 TEST(MatrixMultiplicationTest, LargeMatrix) {
-    const int N = 1000;
-    double A[N * N];
-    double B[N * N];
-    double y[N * N] = {0.0};
+    const int N = 10000;
 
-    // Fill A and B with some values (Identity matrix)
+    auto* A = new double[N * N];
+    auto* B = new double[N];
+    auto* y = new double[N];
+    auto* expected = new double[N];
+
+    // Fill A with some values (Identity matrix)
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             A[i * N + j] = (i == j) ? 1.0 : 0.0;
-            B[i * N + j] = (i == j) ? 1.0 : 0.0;
         }
     }
 
-    double expected[N * N];
+    // Fill B with some values (All one)
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
-            expected[i * N + j] = (i == j) ? 1.0 : 0.0;
-        }
+        B[i] = 1.0;
+        expected[i] = 1.0;
     }
 
     mat_vec_mult(A, B, y, N);
@@ -63,4 +62,10 @@ TEST(MatrixMultiplicationTest, LargeMatrix) {
     for (int i = 0; i < N; ++i) {
         EXPECT_DOUBLE_EQ(y[i], expected[i]);
     }
+
+    // Free dynamically allocated memory
+    delete[] A;
+    delete[] B;
+    delete[] y;
+    delete[] expected;
 }

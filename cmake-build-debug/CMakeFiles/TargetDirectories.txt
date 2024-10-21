@@ -1,5 +1,4 @@
 C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/fvm_lib.dir
-C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/Project_02_FVM.dir
 C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/test_pcg.dir
 C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/test_linear_algebra.dir
 C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/test.dir
