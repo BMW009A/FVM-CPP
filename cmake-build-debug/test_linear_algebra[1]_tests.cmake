@@ -1,5 +1,7 @@
 add_test([=[MatrixMultiplicationTest.SmallMatrix]=]  C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra.exe [==[--gtest_filter=MatrixMultiplicationTest.SmallMatrix]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[MatrixMultiplicationTest.SmallMatrix]=]  PROPERTIES WORKING_DIRECTORY C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MatrixMultiplicationTest.STLVectorMatrix]=]  C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra.exe [==[--gtest_filter=MatrixMultiplicationTest.STLVectorMatrix]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MatrixMultiplicationTest.STLVectorMatrix]=]  PROPERTIES WORKING_DIRECTORY C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[MatrixMultiplicationTest.LargeMatrix]=]  C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra.exe [==[--gtest_filter=MatrixMultiplicationTest.LargeMatrix]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[MatrixMultiplicationTest.LargeMatrix]=]  PROPERTIES WORKING_DIRECTORY C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  test_linear_algebra_TESTS MatrixMultiplicationTest.SmallMatrix MatrixMultiplicationTest.LargeMatrix)
+set(  test_linear_algebra_TESTS MatrixMultiplicationTest.SmallMatrix MatrixMultiplicationTest.STLVectorMatrix MatrixMultiplicationTest.LargeMatrix)
