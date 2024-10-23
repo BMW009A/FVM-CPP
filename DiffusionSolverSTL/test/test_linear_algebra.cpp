@@ -89,7 +89,7 @@ TEST(MatrixMultiplicationTest, STLVectorMatrix) {
 
 // Test for the large-size matrix multiplication
 TEST(MatrixMultiplicationTest, LargeMatrix) {
-    const int N = 10000;
+    const size_t N = 50000;
 
     auto* A = new double[N * N];
     auto* B = new double[N];
@@ -97,14 +97,14 @@ TEST(MatrixMultiplicationTest, LargeMatrix) {
     auto* expected = new double[N];
 
     // Fill A with some values (Identity matrix)
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
+    for (size_t i = 0; i < N; ++i) {
+        for (size_t j = 0; j < N; ++j) {
             A[i * N + j] = (i == j) ? 1.0 : 0.0;
         }
     }
 
     // Fill B with some values (All one)
-    for (int i = 0; i < N; ++i) {
+    for (size_t i = 0; i < N; ++i) {
         B[i] = 1.0;
         expected[i] = 1.0;
     }
@@ -112,7 +112,7 @@ TEST(MatrixMultiplicationTest, LargeMatrix) {
     mat_vec_mult(A, B, y, N);
 
     // Verify that each element matches the expected result
-    for (int i = 0; i < N; ++i) {
+    for (size_t i = 0; i < N; ++i) {
         EXPECT_DOUBLE_EQ(y[i], expected[i]);
     }
 

@@ -4,9 +4,8 @@
 
 #include "linear_algebra.h"
 #include "stdio.h"
-#include "omp.h"
-
-// Define a threshold for parallel computation (Should be tune for better performance according different systems/hardwares)
+#include <omp_llvm.h>
+// Define a threshold for parallel computation (Should be tune for better performance according different systems/hardware)
 const int PARALLEL_THRESHOLD = 1000;
 
 /*
@@ -41,22 +40,46 @@ int mat_vec_mult(const double* A, const double* x, double* y, int n) {
         return -1;  // Return error code
     }
 
+//    if (n == 1) {
+//        y[0] = A[0] * x[0];
+//    } else {
+//        for (int i = 0; i < n; ++i) {
+//            y[i] = 0.0;
+//            for (int j = 0; j < n; ++j) {
+//                y[i] += A[i * n + j] * x[j];
+//            }
+//        }
+//    }
+
+    // Set the number of threads
+    omp_set_num_threads(32);  // Set the number of threads to 4
+    // Initialize y vector in parallel
+    long long i;
+#pragma omp parallel for schedule(static)
+    for (i = 0; i < n; ++i) {
+        y[i] = 0.0;
+    }
+
     // Check if the matrix size exceeds the threshold for parallelization
     if (n >= PARALLEL_THRESHOLD) {
-        printf("Parallel computation used for matrix-vector multiplication\n");
-
+        printf("Parallel computation used for matrix-vector multiplication with %d threads.\n", 32);
         // Parallel matrix-vector multiplication
-        #pragma omp parallel for
-        for (int i = 0; i < n; ++i) {
-            y[i] = 0.0;
-            for (int j = 0; j < n; ++j) {
-                y[i] += A[i * n + j] * x[j];
+
+        int block_size = 4096;  // Optimal block size may vary based on hardware
+#pragma omp parallel for schedule(static)
+        for (i = 0; i < n; i += block_size) {
+            for (long long j = 0; j < n; j += block_size) {
+                for (long long ii = i; ii < i + block_size && ii < n; ++ii) {
+                    for (long long jj = j; jj < j + block_size && jj < n; ++jj) {
+                        y[ii] += A[ii * n + jj] * x[jj];
+                    }
+                }
             }
         }
     } else {
         printf("Serial computation used for matrix-vector multiplication\n");
         // Serial matrix-vector multiplication
-        for (int i = 0; i < n; ++i) {   // Initialization for the y vector.
+        for (i = 0; i < n; ++i) {   // Initialization for the y vector.
             y[i] = 0.0;
         }
 
@@ -64,9 +87,8 @@ int mat_vec_mult(const double* A, const double* x, double* y, int n) {
         if (n == 1) {
             y[0] = A[0] * x[0];
         } else {
-            for (int i = 0; i < n; ++i) {
-                y[i] = 0.0;
-                for (int j = 0; j < n; ++j) {
+            for (i = 0; i < n; ++i) {
+                for (size_t j = 0; j < n; ++j) {
                     y[i] += A[i * n + j] * x[j];
                 }
             }

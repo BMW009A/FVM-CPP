@@ -5,9 +5,17 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 # Enable verbose makefile generation (optional for debugging purposes)
 set(CMAKE_VERBOSE_MAKEFILE ON)
+
+# Find the OpenMP package
+find_package(OpenMP REQUIRED)
+
+if (OPENMP_FOUND)
+    set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}" /openmp::llvm)
+    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}" /openmp::llvm)
+    set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
+endif()
 
 include(FetchContent)
 FetchContent_Declare(
@@ -84,17 +92,20 @@ add_library(fvm_lib
 # Link the main executable with the library
 #target_link_libraries(Project_02_FVM fvm_lib)
 
+# Link OpenMP to the library
+target_link_libraries(fvm_lib PRIVATE OpenMP::OpenMP_C)
+
 # Add test executables (linking against Google Test and your library)
 add_executable(test_pcg
         DiffusionSolverSTL/test/test_pcg.cpp
         DiffusionSolverSTL/src/PCG_solver.h
         DiffusionSolverSTL/src/linear_algebra.h)            # Explicitly include headers for test
-target_link_libraries(test_pcg fvm_lib GTest::gtest_main)
+target_link_libraries(test_pcg fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 
 add_executable(test_linear_algebra
         DiffusionSolverSTL/test/test_linear_algebra.cpp
         DiffusionSolverSTL/src/linear_algebra.h)        # Explicitly include headers for test
-target_link_libraries(test_linear_algebra fvm_lib GTest::gtest_main)
+target_link_libraries(test_linear_algebra fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 
 # Discover Google Test tests
 include(GoogleTest)
