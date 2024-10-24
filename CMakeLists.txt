@@ -53,9 +53,11 @@ include_directories(
 
 # Add library (compile the common source code into a library)
 add_library(fvm_lib
-        DiffusionSolverSTL/src/PCG_solver.c
-        DiffusionSolverSTL/src/linear_algebra.c
-        DiffusionSolverSTL/src/preconditioner.c
+        DiffusionSolverSTL/src/utils/PCG_solver.c
+        DiffusionSolverSTL/src/matrix_operations/linear_algebra.c
+        DiffusionSolverSTL/src/utils/preconditioner.c
+        DiffusionSolverSTL/src/matrix_operations/CRSMatrix.c
+        DiffusionSolverSTL/src/matrix_operations/CRSMatrix.h
 )
 
 #add_executable(Project_02_FVM
@@ -98,13 +100,14 @@ target_link_libraries(fvm_lib PRIVATE OpenMP::OpenMP_C)
 # Add test executables (linking against Google Test and your library)
 add_executable(test_pcg
         DiffusionSolverSTL/test/test_pcg.cpp
-        DiffusionSolverSTL/src/PCG_solver.h
-        DiffusionSolverSTL/src/linear_algebra.h)            # Explicitly include headers for test
+        DiffusionSolverSTL/src/utils/PCG_solver.h
+        DiffusionSolverSTL/src/matrix_operations/linear_algebra.h)            # Explicitly include headers for test
 target_link_libraries(test_pcg fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 
 add_executable(test_linear_algebra
         DiffusionSolverSTL/test/test_linear_algebra.cpp
-        DiffusionSolverSTL/src/linear_algebra.h)        # Explicitly include headers for test
+        DiffusionSolverSTL/src/matrix_operations/linear_algebra.h
+        DiffusionSolverSTL/test/test_crs_matrix.cpp)        # Explicitly include headers for test
 target_link_libraries(test_linear_algebra fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 
 # Discover Google Test tests

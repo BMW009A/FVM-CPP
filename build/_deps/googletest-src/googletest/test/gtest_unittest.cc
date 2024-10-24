@@ -3525,7 +3525,7 @@ TEST(EditDistance, TestSuites) {
        "@@ -1,5 +1,5 @@\n-A\n B\n C\n D\n-E\n+C\n+D\n"},
       {__LINE__, "ABCDEFGHIJKL", "BCDCDEFGJKLJK", "- ++     --   ++",
        "@@ -1,4 +1,5 @@\n-A\n B\n+C\n+D\n C\n D\n"
-       "@@ -6,7 +7,7 @@\n F\n G\n-H\n-I\n J\n K\n L\n+J\n+K\n"},
+       "@@ -6,7 +7,7 @@\n F\n G\n-H\n-IO\n J\n K\n L\n+J\n+K\n"},
       {}};
   for (const Case* c = kCases; c->left; ++c) {
     EXPECT_TRUE(c->expected_edits ==

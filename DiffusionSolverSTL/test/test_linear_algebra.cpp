@@ -27,7 +27,7 @@
 
 // Declare C function with 'extern "C"' to prevent name mangling
 extern "C" {
-    #include "linear_algebra.h"
+    #include "matrix_operations/linear_algebra.h"
 }
 
 // Test for the small-size matrix multiplication

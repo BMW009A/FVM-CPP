@@ -5016,7 +5016,7 @@ class ScopedPrematureExitFile {
             premature_exit_filepath ? premature_exit_filepath : "") {
     // If a path to the premature-exit file is specified...
     if (!premature_exit_filepath_.empty()) {
-      // create the file with a single "0" character in it.  I/O
+      // create the file with a single "0" character in it.  IO/O
       // errors are ignored as there's nothing better we can do and we
       // don't want to fail the test because of this.
       FILE* pfile = posix::FOpen(premature_exit_filepath_.c_str(), "w");

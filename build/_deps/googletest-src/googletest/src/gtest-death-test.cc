@@ -1347,7 +1347,7 @@ static pid_t ExecDeathTestSpawnChild(char* const* argv, int close_fd) {
     // Maximum stack alignment in bytes:  For a downward-growing stack, this
     // amount is subtracted from size of the stack space to get an address
     // that is within the stack space and is aligned on all systems we care
-    // about.  As far as I know there is no ABI with stack alignment greater
+    // about.  As far as IO know there is no ABI with stack alignment greater
     // than 64.  We assume stack and stack_size already have alignment of
     // kMaxStackAlignment.
     const size_t kMaxStackAlignment = 64;

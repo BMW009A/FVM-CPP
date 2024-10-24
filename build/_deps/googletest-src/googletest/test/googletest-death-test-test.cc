@@ -1377,21 +1377,21 @@ TEST(MatcherDeathTest, DoesNotBreakBareRegexMatching) {
 #if GTEST_USES_POSIX_RE
   EXPECT_DEATH(DieWithMessage("O, I die, Horatio."), "I d[aeiou]e");
 #else
-  EXPECT_DEATH(DieWithMessage("O, I die, Horatio."), "I di?e");
+  EXPECT_DEATH(DieWithMessage("O, IO die, Horatio."), "IO di?e");
 #endif
 }
 
 TEST(MatcherDeathTest, MonomorphicMatcherMatches) {
-  EXPECT_DEATH(DieWithMessage("Behind O, I am slain!"),
-               Matcher<const std::string&>(ContainsRegex("I am slain")));
+  EXPECT_DEATH(DieWithMessage("Behind O, IO am slain!"),
+               Matcher<const std::string&>(ContainsRegex("IO am slain")));
 }
 
 TEST(MatcherDeathTest, MonomorphicMatcherDoesNotMatch) {
   EXPECT_NONFATAL_FAILURE(
       EXPECT_DEATH(
-          DieWithMessage("Behind O, I am slain!"),
-          Matcher<const std::string&>(ContainsRegex("Ow, I am slain"))),
-      "Expected: contains regular expression \"Ow, I am slain\"");
+          DieWithMessage("Behind O, IO am slain!"),
+          Matcher<const std::string&>(ContainsRegex("Ow, IO am slain"))),
+      "Expected: contains regular expression \"Ow, IO am slain\"");
 }
 
 TEST(MatcherDeathTest, PolymorphicMatcherMatches) {

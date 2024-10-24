@@ -3,13 +3,13 @@
 //
 #include <iostream>
 #include <unordered_map>
-#include "HeatSolver.hpp"
-#include "ExplicitScheme.hpp"
-#include "ImplicitScheme.hpp"
-#include "CrankNicolsonScheme.hpp"
-#include "SimulationParameters.hpp"
-#include "SchemeType.hpp"
-#include "ConfigParser.hpp"
+#include "solver/HeatSolver.hpp"
+#include "solver/ExplicitScheme.hpp"
+#include "solver/ImplicitScheme.hpp"
+#include "solver/CrankNicolsonScheme.hpp"
+#include "simulation_parameters/SimulationParameters.hpp"
+#include "solver/SchemeType.hpp"
+#include "IO/ConfigParser.hpp"
 
 using namespace std;
 

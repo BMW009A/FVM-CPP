@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-msm85a"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-msm85a"
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bie9w5"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bie9w5"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -119,11 +119,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-msm85a'
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bie9w5'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_520c6
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_520c6.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_520c6.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_520c6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_520c6.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_520c6.exe /implib:cmTC_520c6.lib /pdb:cmTC_520c6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5e920
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_5e920.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_5e920.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5e920.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5e920.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_5e920.exe /implib:cmTC_5e920.lib /pdb:cmTC_5e920.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -163,8 +163,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hs8ffs"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hs8ffs"
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w6vye5"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w6vye5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -174,11 +174,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hs8ffs'
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w6vye5'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4af39
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_4af39.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_4af39.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4af39.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4af39.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_4af39.exe /implib:cmTC_4af39.lib /pdb:cmTC_4af39.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a7c99
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a7c99.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a7c99.dir\\ /FS -c "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a7c99.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a7c99.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_a7c99.exe /implib:cmTC_a7c99.lib /pdb:cmTC_a7c99.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -209,10 +209,106 @@ events:
       Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~2/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.41.34120.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
-...
-
----
-events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mgdru7"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mgdru7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mgdru7'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_55e95
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_55e95.dir\\OpenMPTryFlag.c.obj /FdCMakeFiles\\cmTC_55e95.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-mgdru7\\OpenMPTryFlag.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_55e95.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_55e95.dir\\OpenMPTryFlag.c.obj  /out:cmTC_55e95.exe /implib:cmTC_55e95.lib /pdb:cmTC_55e95.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hbqclw"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hbqclw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hbqclw'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f3be1
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_f3be1.dir\\OpenMPTryFlag.cpp.obj /FdCMakeFiles\\cmTC_f3be1.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-hbqclw\\OpenMPTryFlag.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f3be1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f3be1.dir\\OpenMPTryFlag.cpp.obj  /out:cmTC_f3be1.exe /implib:cmTC_f3be1.lib /pdb:cmTC_f3be1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:421 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:561 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ol51a0"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ol51a0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ol51a0'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_12d5b
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_12d5b.dir\\OpenMPCheckVersion.c.obj /FdCMakeFiles\\cmTC_12d5b.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ol51a0\\OpenMPCheckVersion.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_12d5b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_12d5b.dir\\OpenMPCheckVersion.c.obj  /out:cmTC_12d5b.exe /implib:cmTC_12d5b.lib /pdb:cmTC_12d5b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:421 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:561 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:12 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8jo3s7"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8jo3s7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8jo3s7'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c2048
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c2048.dir\\OpenMPCheckVersion.cpp.obj /FdCMakeFiles\\cmTC_c2048.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8jo3s7\\OpenMPCheckVersion.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c2048.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c2048.dir\\OpenMPCheckVersion.cpp.obj  /out:cmTC_c2048.exe /implib:cmTC_c2048.lib /pdb:cmTC_c2048.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
@@ -225,22 +321,23 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4ntmd"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4ntmd"
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m5fzok"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m5fzok"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS -openmp;/openmp::llvm"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h4ntmd'
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m5fzok'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_415c5
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_415c5.dir\\src.c.obj /FdCMakeFiles\\cmTC_415c5.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h4ntmd\\src.c
-        FAILED: CMakeFiles/cmTC_415c5.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_415c5.dir\\src.c.obj /FdCMakeFiles\\cmTC_415c5.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h4ntmd\\src.c
-        C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-h4ntmd\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_ebff6
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS -openmp;/openmp::llvm  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_ebff6.dir\\src.c.obj /FdCMakeFiles\\cmTC_ebff6.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-m5fzok\\src.c
+        FAILED: CMakeFiles/cmTC_ebff6.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS -openmp;/openmp::llvm  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_ebff6.dir\\src.c.obj /FdCMakeFiles\\cmTC_ebff6.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-m5fzok\\src.c
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+        C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-m5fzok\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -255,23 +352,24 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f8czyl"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f8czyl"
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1h7fv"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1h7fv"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS -openmp;/openmp::llvm"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f8czyl'
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1h7fv'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c6079
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c6079.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_c6079.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-f8czyl\\CheckFunctionExists.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c6079.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c6079.dir\\CheckFunctionExists.c.obj  /out:cmTC_c6079.exe /implib:cmTC_c6079.lib /pdb:cmTC_c6079.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_c6079.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c6079.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c6079.dir\\CheckFunctionExists.c.obj  /out:cmTC_c6079.exe /implib:cmTC_c6079.lib /pdb:cmTC_c6079.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c6079.dir\\CheckFunctionExists.c.obj /out:cmTC_c6079.exe /implib:cmTC_c6079.lib /pdb:cmTC_c6079.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c6079.dir/intermediate.manifest CMakeFiles\\cmTC_c6079.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_84324
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp;/openmp::llvm -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_84324.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_84324.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-g1h7fv\\CheckFunctionExists.c
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_84324.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_84324.dir\\CheckFunctionExists.c.obj  /out:cmTC_84324.exe /implib:cmTC_84324.lib /pdb:cmTC_84324.pdb /version:0.0 /machine:x64   /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_84324.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_84324.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_84324.dir\\CheckFunctionExists.c.obj  /out:cmTC_84324.exe /implib:cmTC_84324.lib /pdb:cmTC_84324.pdb /version:0.0 /machine:x64   /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_84324.dir\\CheckFunctionExists.c.obj /out:cmTC_84324.exe /implib:cmTC_84324.lib /pdb:cmTC_84324.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_84324.dir/intermediate.manifest CMakeFiles\\cmTC_84324.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d
         ninja: build stopped: subcommand failed.
         
@@ -287,129 +385,26 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1dbl38"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1dbl38"
+      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80fb0b"
+      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80fb0b"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS -openmp;/openmp::llvm"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64 "
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1dbl38'
+        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80fb0b'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_e5a13
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_e5a13.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_e5a13.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-1dbl38\\CheckFunctionExists.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e5a13.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e5a13.dir\\CheckFunctionExists.c.obj  /out:cmTC_e5a13.exe /implib:cmTC_e5a13.lib /pdb:cmTC_e5a13.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_e5a13.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e5a13.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e5a13.dir\\CheckFunctionExists.c.obj  /out:cmTC_e5a13.exe /implib:cmTC_e5a13.lib /pdb:cmTC_e5a13.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e5a13.dir\\CheckFunctionExists.c.obj /out:cmTC_e5a13.exe /implib:cmTC_e5a13.lib /pdb:cmTC_e5a13.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e5a13.dir/intermediate.manifest CMakeFiles\\cmTC_e5a13.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_8cc6b
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp;/openmp::llvm -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_8cc6b.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_8cc6b.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-80fb0b\\CheckFunctionExists.c
+        cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8cc6b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8cc6b.dir\\CheckFunctionExists.c.obj  /out:cmTC_8cc6b.exe /implib:cmTC_8cc6b.lib /pdb:cmTC_8cc6b.pdb /version:0.0 /machine:x64   /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_8cc6b.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8cc6b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8cc6b.dir\\CheckFunctionExists.c.obj  /out:cmTC_8cc6b.exe /implib:cmTC_8cc6b.lib /pdb:cmTC_8cc6b.pdb /version:0.0 /machine:x64   /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8cc6b.dir\\CheckFunctionExists.c.obj /out:cmTC_8cc6b.exe /implib:cmTC_8cc6b.lib /pdb:cmTC_8cc6b.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8cc6b.dir/intermediate.manifest CMakeFiles\\cmTC_8cc6b.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:12 (find_package)"
-    description: "Detecting C OpenMP compiler info"
-    directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lvlphs"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lvlphs"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_C_openmp"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lvlphs'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_86cf1
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_86cf1.dir\\OpenMPTryFlag.c.obj /FdCMakeFiles\\cmTC_86cf1.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-lvlphs\\OpenMPTryFlag.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_86cf1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_86cf1.dir\\OpenMPTryFlag.c.obj  /out:cmTC_86cf1.exe /implib:cmTC_86cf1.lib /pdb:cmTC_86cf1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:12 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1na2a2"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1na2a2"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1na2a2'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_cbad6
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_cbad6.dir\\OpenMPTryFlag.cpp.obj /FdCMakeFiles\\cmTC_cbad6.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-1na2a2\\OpenMPTryFlag.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_cbad6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cbad6.dir\\OpenMPTryFlag.cpp.obj  /out:cmTC_cbad6.exe /implib:cmTC_cbad6.lib /pdb:cmTC_cbad6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:421 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:561 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:12 (find_package)"
-    description: "Detecting C OpenMP version"
-    directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6rbs1g"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6rbs1g"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "OpenMP_SPECTEST_C_"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6rbs1g'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_9b4da
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -openmp /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_9b4da.dir\\OpenMPCheckVersion.c.obj /FdCMakeFiles\\cmTC_9b4da.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-6rbs1g\\OpenMPCheckVersion.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9b4da.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9b4da.dir\\OpenMPCheckVersion.c.obj  /out:cmTC_9b4da.exe /implib:cmTC_9b4da.lib /pdb:cmTC_9b4da.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:421 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenMP.cmake:561 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:12 (find_package)"
-    description: "Detecting CXX OpenMP version"
-    directories:
-      source: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gljxrx"
-      binary: "C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gljxrx"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "OpenMP_SPECTEST_CXX_"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gljxrx'
-        
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.1.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a4635
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc -openmp /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a4635.dir\\OpenMPCheckVersion.cpp.obj /FdCMakeFiles\\cmTC_a4635.dir\\ /FS -c C:\\Users\\QCZ\\CLionProjects\\Project-02-FVM\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-gljxrx\\OpenMPCheckVersion.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.1.3\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a4635.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a4635.dir\\OpenMPCheckVersion.cpp.obj  /out:cmTC_a4635.exe /implib:cmTC_a4635.lib /pdb:cmTC_a4635.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        
-      exitCode: 0
 ...

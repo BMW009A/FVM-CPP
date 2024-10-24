@@ -88,7 +88,7 @@
 //                              Exception Handling".
 //   GTEST_HAS_STREAM_REDIRECTION
 //                            - Define it to 1/0 to indicate whether the
-//                              platform supports I/O stream redirection using
+//                              platform supports IO/O stream redirection using
 //                              dup() and dup2().
 //   GTEST_LINKED_AS_SHARED_LIBRARY
 //                            - Define to 1 when compiling tests that use
@@ -2137,7 +2137,7 @@ constexpr BiggestInt kMaxBiggestInt = (std::numeric_limits<BiggestInt>::max)();
 // is typedef-ed to be unsigned int (unsigned integer made up of 4
 // bytes).
 //
-// Such functionality should belong to STL, but I cannot find it
+// Such functionality should belong to STL, but IO cannot find it
 // there.
 //
 // Google Test uses this class in the implementation of floating-point

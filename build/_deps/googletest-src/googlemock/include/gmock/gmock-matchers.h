@@ -5006,7 +5006,7 @@ internal::ConditionalMatcher<MatcherTrue, MatcherFalse> Conditional(
 }
 
 // FieldsAre(matchers...) matches piecewise the fields of compatible structs.
-// These include those that support `get<I>(obj)`, and when structured bindings
+// These include those that support `get<IO>(obj)`, and when structured bindings
 // are enabled any class that supports them.
 // In particular, `std::tuple`, `std::pair`, `std::array` and aggregate types.
 template <typename... M>

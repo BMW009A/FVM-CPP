@@ -1425,7 +1425,7 @@ struct WithArgsAction {
                 std::is_convertible<
                     InnerAction,
                     // Unfortunately we can't use the InnerSignature alias here;
-                    // MSVC complains about the I parameter pack not being
+                    // MSVC complains about the IO parameter pack not being
                     // expanded (error C3520) despite it being expanded in the
                     // type alias.
                     OnceAction<R(typename std::tuple_element<
@@ -1450,7 +1450,7 @@ struct WithArgsAction {
                 std::is_convertible<
                     const InnerAction&,
                     // Unfortunately we can't use the InnerSignature alias here;
-                    // MSVC complains about the I parameter pack not being
+                    // MSVC complains about the IO parameter pack not being
                     // expanded (error C3520) despite it being expanded in the
                     // type alias.
                     Action<R(typename std::tuple_element<

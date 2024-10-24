@@ -212,7 +212,7 @@ def GetShellCommandOutput(env_cmd):
     A string with the command's combined standard and diagnostic output.
   """
 
-  # Spawns cmd in a sub-process, and gets its standard I/O file objects.
+  # Spawns cmd in a sub-process, and gets its standard IO/O file objects.
   # Set and save the environment properly.
   environ = os.environ.copy()
   environ.update(env_cmd[0])

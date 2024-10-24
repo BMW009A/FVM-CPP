@@ -1280,11 +1280,11 @@ TEST(StrCaseNeTest, CanDescribeSelf) {
 // Tests that HasSubstr() works for matching string-typed values.
 TEST(HasSubstrTest, WorksForStringClasses) {
   const Matcher<std::string> m1 = HasSubstr("foo");
-  EXPECT_TRUE(m1.Matches(std::string("I love food.")));
+  EXPECT_TRUE(m1.Matches(std::string("IO love food.")));
   EXPECT_FALSE(m1.Matches(std::string("tofo")));
 
   const Matcher<const std::string&> m2 = HasSubstr("foo");
-  EXPECT_TRUE(m2.Matches(std::string("I love food.")));
+  EXPECT_TRUE(m2.Matches(std::string("IO love food.")));
   EXPECT_FALSE(m2.Matches(std::string("tofo")));
 
   const Matcher<std::string> m_empty = HasSubstr("");
@@ -1295,12 +1295,12 @@ TEST(HasSubstrTest, WorksForStringClasses) {
 // Tests that HasSubstr() works for matching C-string-typed values.
 TEST(HasSubstrTest, WorksForCStrings) {
   const Matcher<char*> m1 = HasSubstr("foo");
-  EXPECT_TRUE(m1.Matches(const_cast<char*>("I love food.")));
+  EXPECT_TRUE(m1.Matches(const_cast<char*>("IO love food.")));
   EXPECT_FALSE(m1.Matches(const_cast<char*>("tofo")));
   EXPECT_FALSE(m1.Matches(nullptr));
 
   const Matcher<const char*> m2 = HasSubstr("foo");
-  EXPECT_TRUE(m2.Matches("I love food."));
+  EXPECT_TRUE(m2.Matches("IO love food."));
   EXPECT_FALSE(m2.Matches("tofo"));
   EXPECT_FALSE(m2.Matches(nullptr));
 

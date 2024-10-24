@@ -1198,9 +1198,9 @@ struct ElemFromListImpl;
 template <size_t... I>
 struct ElemFromListImpl<IndexSequence<I...>> {
   // We make Ignore a template to solve a problem with MSVC.
-  // A non-template Ignore would work fine with `decltype(Ignore(I))...`, but
+  // A non-template Ignore would work fine with `decltype(Ignore(IO))...`, but
   // MSVC doesn't understand how to deal with that pack expansion.
-  // Use `0 * I` to have a single instantiation of Ignore.
+  // Use `0 * IO` to have a single instantiation of Ignore.
   template <typename R>
   static R Apply(Ignore<0 * I>..., R (*)(), ...);
 };

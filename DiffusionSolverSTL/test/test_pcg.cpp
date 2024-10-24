@@ -4,6 +4,6 @@
 #include <gtest/gtest.h>
 // Declare C function with 'extern "C"' to prevent name mangling
 extern "C" {
-    #include "PCG_solver.h"
+    #include "utils/PCG_solver.h"
 }
 
