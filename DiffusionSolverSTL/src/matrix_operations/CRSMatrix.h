@@ -20,4 +20,7 @@ typedef struct {
 // Function to initialize CRS from dense matrix (C function)
 void dense_to_crs(const double* dense, size_t rows, size_t cols, CRSMatrix* crs_matrix);
 
+// Utility function to free the memory
+void free_crs_matrix(CRSMatrix* matrix);
+
 #endif //PROJECT_02_FVM_CRSMATRIX_H

@@ -5,6 +5,8 @@
 #include "linear_algebra.h"
 #include "stdio.h"
 #include <omp_llvm.h>
+#include "CRSMatrix.h"
+
 // Define a threshold for parallel computation (Should be tune for better performance according different systems/hardware)
 const int PARALLEL_THRESHOLD = 1000;
 
@@ -93,6 +95,67 @@ int mat_vec_mult(const double* A, const double* x, double* y, int n) {
     }
 
     return 0;  // Return success code
+}
+
+/*
+ * Function: crs_mat_vec_mult
+ * ----------------------
+ * This function performs CRS format matrix-vector multiplications: y = A * x.
+ *
+ * Inputs:
+ *   - crs_matrix: Pointer to matrix A (1D array, flattened(if using std::vector or Eigen::VectorX))
+ *   - x: Pointer to vector x
+ *   - y: Pointer to output vector y
+ *
+ * Error handling:
+ *   - Checks for null pointers (A, x, or y) and returns an error if found.
+ *   - Verifies that the matrix dimension (n) is positive.
+ */
+int crs_mat_vec_mult(const CRSMatrix* A, const double* x, double* y) {
+    // Check for null pointers
+    if (A == NULL || x == NULL || y == NULL) {
+        printf("Error: Initialization is not correct due to inputs has NULL pointers.\n");
+        return -1;  // Error code
+    }
+    // Check for valid matrix dimensions
+    if (A->rows <= 0 || A->cols <= 0 || A->nnz < 0) {
+        printf("Matrix dimensions or non-zero count are invalid.\n");
+        return -1;  // Error code
+    }
+
+    // Initialize y vector to 0 for all rows
+    for (size_t i= 0; i < A->rows; ++i) {
+        y[i] = 0.0;
+    }
+
+    // Perform matrix-vector multiplication
+    for (size_t i = 0; i < A->rows; ++i) {
+        //Get the range of non-zero elements for row i
+        int start = A->row_ptr[i];
+        int end = A->row_ptr[i + 1];
+
+        // Check that start and end indices are within bounds of nnz
+        if (start < 0 || end < 0 || start > A->nnz || end > A->nnz || start > end) {
+            printf("Error: row_ptr indices out of bounds for row %zu.\n", i);
+            return -1;  // Error code for out-of-bounds indices
+        }
+
+        //Accumulate the dot product for row i
+        for (int j = start; j < end; ++j) {
+            int col = A->col_idx[j];
+
+            // Check that col index is within bounds of matrix columns
+            if (col < 0 || col >= A->cols) {
+                printf("Error: col_idx out of bounds at index %d.\n", j);
+                return -1;  // Error code for out-of-bounds column index
+            }
+
+            y[i] += A->values[j] * x[col];
+        }
+    }
+
+    return 0;
+
 }
 
 // Dot product of two vectors

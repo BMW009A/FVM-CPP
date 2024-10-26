@@ -38,3 +38,14 @@ void dense_to_crs(const double* dense, size_t rows, size_t cols, CRSMatrix* crs_
     }
     crs_matrix->row_ptr[rows] = k;  // Final element in row_ptr
 }
+
+// Utility function to free the memory
+void free_crs_matrix(CRSMatrix* matrix) {
+    if (matrix->values) free(matrix->values);
+    if (matrix->col_idx) free(matrix->col_idx);
+    if (matrix->row_ptr) free(matrix->row_ptr);
+
+    matrix->row_ptr = NULL;
+    matrix->col_idx = NULL;
+    matrix->values = NULL;
+}
