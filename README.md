@@ -14,8 +14,7 @@ $$
 $$
 ### Euler Explicit Scheme
 
-$$ 
-T^{n+1}_{i,j} = T^n_{i,j} + \alpha \Delta t \left( \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \quad (3)
+$$ T^{n+1}_{i,j} = T^n_{i,j} + \alpha \Delta t \left( \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \quad (3)
 $$
 
 ### Euler Implicit Scheme
