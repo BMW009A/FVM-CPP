@@ -21,7 +21,9 @@ $$\frac{T_{i,j}^{n+1} - T_{i,j}^n}{\Delta t} = \frac{\alpha}{2} \left( \frac{T_{
 
 ## 3D Diffusion equation
 The govern equation is:
+
 $$\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right) \quad (6)$$
+
 ### Explicit Scheme
 ### Implicit Scheme
 
