@@ -21,19 +21,19 @@ $$\frac{T^{n+1}_{i,j} - T^n_{i,j}}{\Delta t} = \frac{\alpha}{2} \left( \frac{T^{
 
 ## 3D Diffusion equation
 The govern equation is:
-$$\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right) \tag{6}$$
+$$\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right) \quad (6)$$
 ### Explicit Scheme
 ### Implicit Scheme
 
 ## Advection equation
-$$\frac{\partial \phi}{\partial t} + u \frac{\partial \phi}{\partial x} + v \frac{\partial \phi}{\partial y} + w \frac{\partial \phi}{\partial z} = 0 \tag{7}$$
+$$\frac{\partial \phi}{\partial t} + u \frac{\partial \phi}{\partial x} + v \frac{\partial \phi}{\partial y} + w \frac{\partial \phi}{\partial z} = 0 \quad (7)$$
 ## Advection-Diffusion equation
-$$\frac{\partial \phi}{\partial t} + u \frac{\partial \phi}{\partial x} + v \frac{\partial \phi}{\partial y} + w \frac{\partial \phi}{\partial z} = D \left( \frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2 \phi}{\partial y^2} + \frac{\partial^2 \phi}{\partial z^2} \right) \tag{8}$$
+$$\frac{\partial \phi}{\partial t} + u \frac{\partial \phi}{\partial x} + v \frac{\partial \phi}{\partial y} + w \frac{\partial \phi}{\partial z} = D \left( \frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2 \phi}{\partial y^2} + \frac{\partial^2 \phi}{\partial z^2} \right) \quad (8)$$
 
 ## Navier-Stokes equations in 2D under Cartesian Coordinates (SIMPLE algorithm)
-$$\rho \left( \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f} \tag{9a}$$
+$$\rho \left( \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f} \quad (9)$$
 
-$$\nabla \cdot \mathbf{u} = 0 \tag{9b}$$
+$$\nabla \cdot \mathbf{u} = 0 \quad (9b)$$
 
 ### Lid-Driven Cavity Flow
 ![Lid-Driven Cavity Flow]()
