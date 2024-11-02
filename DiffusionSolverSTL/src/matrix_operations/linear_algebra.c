@@ -110,6 +110,8 @@ int mat_vec_mult(const double* A, const double* x, double* y, int n) {
  * Error handling:
  *   - Checks for null pointers (A, x, or y) and returns an error if found.
  *   - Verifies that the matrix dimension (n) is positive.
+ *   - Verifies that the matrix dimension (rows, cols and nnz) is valid.
+ *   - Verifies that the bounds of nnz
  */
 int crs_mat_vec_mult(const CRSMatrix* A, const double* x, double* y) {
     // Check for null pointers
