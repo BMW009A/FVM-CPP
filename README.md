@@ -9,15 +9,15 @@ $$\frac{\partial T}{\partial t} = \alpha \left( \frac{\partial^2 T}{\partial x^2
 
 The finite difference approximation for the 2D heat equation is:
 
-$$\frac{T_{i,j}^{n+1} - T{i,j}^n}{\Delta t} = \alpha \left( \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \quad (2)$$
+$$\frac{T_{i,j}^{n+1} - T_{i,j}^n}{\Delta t} = \alpha \left( \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \quad (2)$$
 ### Euler Explicit Scheme
 
 $$T_{i,j}^{n+1} = T^n_{i,j} + \alpha \Delta t \left( \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \quad (3)$$
 
 ### Euler Implicit Scheme
-$$\frac{T^{n+1}_{i,j} - T^n_{i,j}}{\Delta t} = \alpha \left( \frac{T^{n+1}_{i+1,j} - 2T^{n+1}_{i,j} + T^{n+1}_{i-1,j}}{\Delta x^2} + \frac{T^{n+1}_{i,j+1} - 2T^{n+1}_{i,j} + T^{n+1}_{i,j-1}}{\Delta y^2} \right) \quad (4)$$
+$$\frac{T_{i,j}^{n+1} - T^n_{i,j}}{\Delta t} = \alpha \left( \frac{T^{n+1}_{i+1,j} - 2T^{n+1}_{i,j} + T^{n+1}_{i-1,j}}{\Delta x^2} + \frac{T^{n+1}_{i,j+1} - 2T^{n+1}_{i,j} + T^{n+1}_{i,j-1}}{\Delta y^2} \right) \quad (4)$$
 ### Crank-Nicolson Scheme
-$$\frac{T^{n+1}_{i,j} - T^n_{i,j}}{\Delta t} = \frac{\alpha}{2} \left( \frac{T^{n+1}_{i+1,j} - 2T^{n+1}_{i,j} + T^{n+1}_{i-1,j}}{\Delta x^2} + \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} \right) + \frac{\alpha}{2} \left( \frac{T^{n+1}_{i,j+1} - 2T^{n+1}_{i,j} + T^{n+1}_{i,j-1}}{\Delta y^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \tag{5}$$
+$$\frac{T_{i,j}^{n+1} - T^n_{i,j}}{\Delta t} = \frac{\alpha}{2} \left( \frac{T^{n+1}_{i+1,j} - 2T^{n+1}_{i,j} + T^{n+1}_{i-1,j}}{\Delta x^2} + \frac{T^n_{i+1,j} - 2T^n_{i,j} + T^n_{i-1,j}}{\Delta x^2} \right) + \frac{\alpha}{2} \left( \frac{T^{n+1}_{i,j+1} - 2T^{n+1}_{i,j} + T^{n+1}_{i,j-1}}{\Delta y^2} + \frac{T^n_{i,j+1} - 2T^n_{i,j} + T^n_{i,j-1}}{\Delta y^2} \right) \tag{5}$$
 
 ## 3D Diffusion equation
 The govern equation is:
