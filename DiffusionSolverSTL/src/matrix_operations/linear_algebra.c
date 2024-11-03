@@ -56,7 +56,7 @@ int mat_vec_mult(const double* A, const double* x, double* y, int n) {
     // Set the number of threads
     omp_set_num_threads(omp_get_max_threads());  // Set the number of threads to 4
     // Optimal block size may vary based on hardware
-    int block_size = 128;
+    int block_size = 32;
 
     long long i;
     for (i = 0; i < n; ++i) {

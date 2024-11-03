@@ -47,6 +47,7 @@ enable_testing()
 # Add the source files to the executable
 include_directories(
         ${PROJECT_SOURCE_DIR}/DiffusionSolverSTL/src  # Include the main source files
+        ${PROJECT_SOURCE_DIR}/DiffusionSolverSTL/src/matrix_operations
         ${gtest_SOURCE_DIR}/include
         ${gtest_BINARY_DIR}/include
 )
@@ -55,15 +56,15 @@ include_directories(
 add_library(fvm_lib
         DiffusionSolverSTL/src/utils/PCG_solver.c
         DiffusionSolverSTL/src/matrix_operations/linear_algebra.c
+        DiffusionSolverSTL/src/matrix_operations/linear_algebra.h
         DiffusionSolverSTL/src/utils/preconditioner.c
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.c
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.h
+        DiffusionSolverSTL/src/matrix_operations/CPPVec2CArr.cpp
+        DiffusionSolverSTL/src/matrix_operations/CPPVec2CArr.hpp
 )
 
 #add_executable(Project_02_FVM
-###        2DImp-STL/main.cpp
-###        2DImp-STL/output.cpp
-###        2DImp-STL/output.hpp
 #        DiffusionSolverSTL/src/main.cpp
 #        DiffusionSolverSTL/src/TimeStepping.cpp
 #        DiffusionSolverSTL/src/TimeStepping.hpp
@@ -107,10 +108,17 @@ target_link_libraries(test_pcg fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 add_executable(test_linear_algebra
         DiffusionSolverSTL/test/test_linear_algebra.cpp
         DiffusionSolverSTL/src/matrix_operations/linear_algebra.h
-        DiffusionSolverSTL/test/test_crs_matrix.cpp)        # Explicitly include headers for test
+        DiffusionSolverSTL/test/test_crs_matrix.cpp)
 target_link_libraries(test_linear_algebra fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
+
+add_executable(test_crs_matrix
+        DiffusionSolverSTL/test/test_crs_matrix.cpp
+        DiffusionSolverSTL/src/matrix_operations/CRSMatrix.h
+        DiffusionSolverSTL/src/matrix_operations/CRSMatrix.c)
+target_link_libraries(test_crs_matrix fvm_lib GTest::gtest_main OpenMP::OpenMP_C)
 
 # Discover Google Test tests
 include(GoogleTest)
 gtest_discover_tests(test_pcg)
 gtest_discover_tests(test_linear_algebra)
+gtest_discover_tests(test_crs_matrix)

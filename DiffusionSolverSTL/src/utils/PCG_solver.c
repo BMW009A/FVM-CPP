@@ -59,28 +59,45 @@ int pcg_solver(const double *A, const double *b, double *x, int n, int max_iter,
     double* p = (double*) malloc(n * sizeof(double ));
     double* Ap = (double*) malloc(n * sizeof(double ));
 
+    // Checking for Allocations
+    if (!r || !z || !p || !Ap) {
+        fprintf(stderr, "Memory allocation failed in pcg_solver.\n");
+        free(r); free(z); free(p); free(Ap);
+        return -1;
+    }
+
     // Compute initial residual: r = b - A * x
     mat_vec_mult(A, x, r, n);  // y = A * x, return
     vec_subtract(b, r, r, n);  // in this case, initialize the first residual as r,
-                                          // using r as the intermeddle variable to pass the result from vector multiply.
+                               // using r as the intermediate variable to pass the result from vector multiply.
 
-    // Preconditioning step, choose different preconditioner
+    // Preconditioning step
+    double* L = NULL;
+    if (strcmp(preconditioner_type, "IncompleteCholesky") == 0) {
+        L = (double*) malloc(n * n * sizeof(double));
+        if (!L) {
+            fprintf(stderr, "Memory allocation for incomplete Cholesky preconditioner failed.\n");
+            free(r); free(z); free(p); free(Ap);
+            return -1;
+        }
+        incomplete_cholesky(A, L, n);
+    }
+
+    // Initial preconditioning step
     if (strcmp(preconditioner_type, "Jacobi") == 0) {
         jacobi_precondition(A, r, z, n);
-    } else if (strcmp(preconditioner_type, "incomplete_cholesky") == 0) {
-        double* L = (double*) malloc(n * n * sizeof(double ));
-        incomplete_cholesky(A, L, n);
+    } else if (strcmp(preconditioner_type, "IncompleteCholesky") == 0) {
         ic_precondition(L, r, z, n);
-        free(L);
     } else {
-        precondition(A, r, z, n);  // Default to identity (no preconditioner)
+        precondition(A, r, z, n);  // Default to identity
+        // memcpy(z, r, n * sizeof(double));  // No preconditioner (identity)
     }
 
     // Set initial search direction p = z
-    for (int i = 0; i < n; ++i) {
-        p[i] = z[i];
-    }
-    
+//    for (int i = 0; i < n; ++i) {
+//        p[i] = z[i];
+//    }
+    memcpy(p, z, n * sizeof(double));
     double r_dot_z_old = dot_product(r, z, n);
 
     // Iterative loop
@@ -92,52 +109,45 @@ int pcg_solver(const double *A, const double *b, double *x, int n, int max_iter,
         // alpha_k = dot(rk, rk) / dot(pk, A * pk);
         double alpha = r_dot_z_old / dot_product(p, Ap, n);
 
-        // Update solution x : x_k+1 = x_k + alpha_k * pk
+        // Update x and r
         for (int j = 0; j < n; ++j) {
-            x[j] += alpha * p[j];
-        }
-
-        // Update residual r : r_k+1 = r_k - alpha_k * A * pk
-        for (int j = 0; j < n; ++j) {
-            r[j] -= alpha * Ap[j];
+            x[j] += alpha * p[j];   // Update solution x : x_k+1 = x_k + alpha_k * pk
+            r[j] -= alpha * Ap[j];  // Update residual r : r_k+1 = r_k - alpha_k * A * pk
         }
 
         // Check for the convergence
         double r_norm = sqrt(dot_product(r, r, n));
         if (r_norm < tol) {
             printf("PCG converged after %d iterations\n", i + 1);
-            free(r); free(z); free(p); free(Ap);
+            free(r); free(z); free(p); free(Ap);free(L);
             return 0;
         }
 
-        // Preconditioning step
+        // Apply preconditioner
         if (strcmp(preconditioner_type, "Jacobi") == 0) {
             jacobi_precondition(A, r, z, n);
         } else if (strcmp(preconditioner_type, "IncompleteCholesky") == 0) {
-            double* L = (double*)malloc(n * n * sizeof(double));
-            incomplete_cholesky(A, L, n);
             ic_precondition(L, r, z, n);
-            free(L);
         } else {
-            precondition(A, r, z, n);  // Default to identity
+            memcpy(z, r, n * sizeof(double));  // No preconditioner
         }
 
-        double r_dot_new = dot_product(r, z, n);
+        double r_dot_z_new = dot_product(r, z, n);
 
         // beta_k = dot(r_k+1, r_k+1) / dot(rk, rk);
-        double beta = r_dot_new / r_dot_z_old;
+        double beta = r_dot_z_new / r_dot_z_old;
 
         // p_k+1 = r_k+1 + beta_k * p_k;
         for (int j = 0; j < n; ++j) {
             p[j] = z[j] + beta * p[j];
         }
 
-        r_dot_z_old = r_dot_new;  //Update for next iteration
+        r_dot_z_old = r_dot_z_new;  //Update for next iteration
 
     }
 
     // If we reach this point, the algorithm did not converge within max_iter
     printf("PCG did not converge after %d iterations\n", max_iter);
-    free(r); free(z); free(p); free(Ap);
+    free(r); free(z); free(p); free(Ap); free(L);
     return 1;
 }

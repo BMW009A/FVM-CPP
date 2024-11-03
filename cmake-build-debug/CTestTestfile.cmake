@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 include("C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_pcg[1]_include.cmake")
 include("C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_linear_algebra[1]_include.cmake")
+include("C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_crs_matrix[1]_include.cmake")
 subdirs("_deps/googletest-build")

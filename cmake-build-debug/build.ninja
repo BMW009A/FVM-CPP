@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_fvm_lib: phony || .
 
 build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\utils\PCG_solver.c || cmake_object_order_depends_target_fvm_lib
   FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi -openmp
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils
   TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
@@ -59,7 +59,7 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj: C_CO
 
 build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c || cmake_object_order_depends_target_fvm_lib
   FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi -openmp
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations
   TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
@@ -67,7 +67,7 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_alg
 
 build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\utils\preconditioner.c || cmake_object_order_depends_target_fvm_lib
   FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi -openmp
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils
   TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
@@ -75,7 +75,15 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj: 
 
 build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj: C_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c || cmake_object_order_depends_target_fvm_lib
   FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi -openmp
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
+  OBJECT_DIR = CMakeFiles\fvm_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations
+  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
+  TARGET_PDB = fvm_lib.pdb
+
+build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp.obj: CXX_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp || cmake_object_order_depends_target_fvm_lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations
   TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
@@ -89,8 +97,8 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.
 #############################################
 # Link the static library fvm_lib.lib
 
-build fvm_lib.lib: C_STATIC_LIBRARY_LINKER__fvm_lib_Debug CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi
+build fvm_lib.lib: CXX_STATIC_LIBRARY_LINKER__fvm_lib_Debug CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   POST_BUILD = cd .
@@ -110,7 +118,7 @@ build cmake_object_order_depends_target_test_pcg: phony || cmake_object_order_de
 
 build CMakeFiles\test_pcg.dir\DiffusionSolverSTL\test\test_pcg.cpp.obj: CXX_COMPILER__test_pcg_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_pcg.cpp || cmake_object_order_depends_target_test_pcg
   FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = CMakeFiles\test_pcg.dir
   OBJECT_FILE_DIR = CMakeFiles\test_pcg.dir\DiffusionSolverSTL\test
   TARGET_COMPILE_PDB = CMakeFiles\test_pcg.dir\
@@ -148,7 +156,7 @@ build cmake_object_order_depends_target_test_linear_algebra: phony || cmake_obje
 
 build CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test\test_linear_algebra.cpp.obj: CXX_COMPILER__test_linear_algebra_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_linear_algebra.cpp || cmake_object_order_depends_target_test_linear_algebra
   FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = CMakeFiles\test_linear_algebra.dir
   OBJECT_FILE_DIR = CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test
   TARGET_COMPILE_PDB = CMakeFiles\test_linear_algebra.dir\
@@ -156,7 +164,7 @@ build CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test\test_linear_alg
 
 build CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test\test_crs_matrix.cpp.obj: CXX_COMPILER__test_linear_algebra_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_crs_matrix.cpp || cmake_object_order_depends_target_test_linear_algebra
   FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
   OBJECT_DIR = CMakeFiles\test_linear_algebra.dir
   OBJECT_FILE_DIR = CMakeFiles\test_linear_algebra.dir\DiffusionSolverSTL\test
   TARGET_COMPILE_PDB = CMakeFiles\test_linear_algebra.dir\
@@ -182,6 +190,52 @@ build test_linear_algebra.exe test_linear_algebra[1]_tests.cmake | ${cmake_ninja
   TARGET_FILE = test_linear_algebra.exe
   TARGET_IMPLIB = test_linear_algebra.lib
   TARGET_PDB = test_linear_algebra.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_crs_matrix
+
+
+#############################################
+# Order-only phony target for test_crs_matrix
+
+build cmake_object_order_depends_target_test_crs_matrix: phony || cmake_object_order_depends_target_fvm_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\test\test_crs_matrix.cpp.obj: CXX_COMPILER__test_crs_matrix_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\test\test_crs_matrix.cpp || cmake_object_order_depends_target_test_crs_matrix
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\test_crs_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\test
+  TARGET_COMPILE_PDB = CMakeFiles\test_crs_matrix.dir\
+  TARGET_PDB = test_crs_matrix.pdb
+
+build CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj: C_COMPILER__test_crs_matrix_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c || cmake_object_order_depends_target_test_crs_matrix
+  FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi -openmp
+  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -external:IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\test_crs_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\src\matrix_operations
+  TARGET_COMPILE_PDB = CMakeFiles\test_crs_matrix.dir\
+  TARGET_PDB = test_crs_matrix.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_crs_matrix
+
+
+#############################################
+# Link the executable test_crs_matrix.exe
+
+build test_crs_matrix.exe test_crs_matrix[1]_tests.cmake | ${cmake_ninja_workdir}test_crs_matrix[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_crs_matrix_Debug CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\test\test_crs_matrix.cpp.obj CMakeFiles\test_crs_matrix.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj | fvm_lib.lib lib\gtest_main.lib lib\gtest.lib || fvm_lib.lib lib\gtest.lib lib\gtest_main.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64  /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = fvm_lib.lib  lib\gtest_main.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_crs_matrix.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=test_crs_matrix -D TEST_EXECUTABLE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_crs_matrix.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_crs_matrix_TESTS -D CTEST_FILE=C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug/test_crs_matrix[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2023.1.3/bin/cmake/win/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = CMakeFiles\test_crs_matrix.dir\
+  TARGET_FILE = test_crs_matrix.exe
+  TARGET_IMPLIB = test_crs_matrix.lib
+  TARGET_PDB = test_crs_matrix.pdb
 
 
 #############################################
@@ -643,6 +697,8 @@ build gtest_main: phony lib\gtest_main.lib
 
 build gtest_main.lib: phony lib\gtest_main.lib
 
+build test_crs_matrix: phony test_crs_matrix.exe
+
 build test_linear_algebra: phony test_linear_algebra.exe
 
 build test_pcg: phony test_pcg.exe
@@ -655,7 +711,7 @@ build test_pcg: phony test_pcg.exe
 #############################################
 # Folder: C:/Users/QCZ/CLionProjects/Project-02-FVM/cmake-build-debug
 
-build all: phony fvm_lib.lib test_pcg.exe test_linear_algebra.exe _deps\googletest-build\all
+build all: phony fvm_lib.lib test_pcg.exe test_linear_algebra.exe test_crs_matrix.exe _deps\googletest-build\all
 
 # =============================================================================
 
