@@ -41,9 +41,18 @@ double* Vector2Flatten(const vector<vector<double>>& matrix) {
 /*
  * Function: Flatten2Vector
  * -------------------------
- * Assemble the flatten C-style array to 2D std::vector
+ * Assemble the flatten C-style array to std::vector
  */
 vector<vector<double>> Flatten2Vector(CRSMatrix* crs_matrix, size_t rows, size_t cols) {
+
+    std::vector<std::vector<double>> VecOutput;
+
+    // Convert the CRS format matrix to 2D std::vector after solving the system of linear equations.
+
+    return VecOutput;
+}
+
+vector<double> Flatten2Vector(CRSMatrix* crs_matrix, size_t rows, size_t cols) {
 
     std::vector<std::vector<double>> VecOutput;
 
