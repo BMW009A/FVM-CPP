@@ -60,7 +60,6 @@ add_library(fvm_lib
         DiffusionSolverSTL/src/utils/preconditioner.c
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.c
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.h
-        DiffusionSolverSTL/src/matrix_operations/CPPVec2CArr.cpp
         DiffusionSolverSTL/src/matrix_operations/CPPVec2CArr.hpp
 )
 

@@ -81,14 +81,6 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.
   TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
   TARGET_PDB = fvm_lib.pdb
 
-build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp.obj: CXX_COMPILER__fvm_lib_unscanned_Debug C$:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp || cmake_object_order_depends_target_fvm_lib
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
-  INCLUDES = -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src -IC:\Users\QCZ\CLionProjects\Project-02-FVM\DiffusionSolverSTL\src\matrix_operations -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-src\googletest\include -IC:\Users\QCZ\CLionProjects\Project-02-FVM\cmake-build-debug\_deps\googletest-build\googletest\include
-  OBJECT_DIR = CMakeFiles\fvm_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations
-  TARGET_COMPILE_PDB = CMakeFiles\fvm_lib.dir\fvm_lib.pdb
-  TARGET_PDB = fvm_lib.pdb
-
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target fvm_lib
@@ -97,8 +89,8 @@ build CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CPPVec2CAr
 #############################################
 # Link the static library fvm_lib.lib
 
-build fvm_lib.lib: CXX_STATIC_LIBRARY_LINKER__fvm_lib_Debug CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CPPVec2CArr.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi
+build fvm_lib.lib: C_STATIC_LIBRARY_LINKER__fvm_lib_Debug CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\PCG_solver.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\linear_algebra.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\utils\preconditioner.c.obj CMakeFiles\fvm_lib.dir\DiffusionSolverSTL\src\matrix_operations\CRSMatrix.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS -openmp;/openmp::llvm /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = CMakeFiles\fvm_lib.dir
   POST_BUILD = cd .

@@ -133,22 +133,22 @@ int crs_mat_vec_mult(const CRSMatrix* A, const double* x, double* y) {
     // Perform matrix-vector multiplication
     for (size_t i = 0; i < A->rows; ++i) {
         //Get the range of non-zero elements for row i
-        int start = A->row_ptr[i];
-        int end = A->row_ptr[i + 1];
+        size_t start = A->row_ptr[i];
+        size_t end = A->row_ptr[i + 1];
 
         // Check that start and end indices are within bounds of nnz
-        if (start < 0 || end < 0 || start > A->nnz || end > A->nnz || start > end) {
+        if (start > A->nnz || end > A->nnz || start > end) {
             printf("Error: row_ptr indices out of bounds for row %zu.\n", i);
             return -1;  // Error code for out-of-bounds indices
         }
 
         //Accumulate the dot product for row i
-        for (int j = start; j < end; ++j) {
-            int col = A->col_idx[j];
+        for (size_t j = start; j < end; ++j) {
+            size_t col = A->col_idx[j];
 
             // Check that col index is within bounds of matrix columns
-            if (col < 0 || col >= A->cols) {
-                printf("Error: col_idx out of bounds at index %d.\n", j);
+            if (col >= A->cols) {
+                printf("Error: col_idx out of bounds at index %zu.\n", j);
                 return -1;  // Error code for out-of-bounds column index
             }
 
