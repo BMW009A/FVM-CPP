@@ -1,8 +1,6 @@
 //
 // Created by QCZ on 10/24/2024.
 //
-// Created by QCZ on 10/24/2024.
-//
 /*
  * File: test_crs_matrix.cpp
  * -------------------------

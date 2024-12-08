@@ -6,6 +6,7 @@
 #include "stdio.h"
 #include <omp_llvm.h>
 #include "CRSMatrix.h"
+#include "CPPVec2CArr.hpp"
 
 // Define a threshold for parallel computation (Should be tune for better performance according different systems/hardware)
 const int PARALLEL_THRESHOLD = 1000;

@@ -61,6 +61,7 @@ add_library(fvm_lib
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.c
         DiffusionSolverSTL/src/matrix_operations/CRSMatrix.h
         DiffusionSolverSTL/src/matrix_operations/CPPVec2CArr.hpp
+        DiffusionSolverSTL/test/test_CPPVec2CArr.cpp
 )
 
 #add_executable(Project_02_FVM

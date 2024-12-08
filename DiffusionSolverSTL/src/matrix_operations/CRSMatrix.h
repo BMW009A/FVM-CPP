@@ -8,13 +8,17 @@
 
 #include <cstddef>  // for size_t
 
+/*
+ * @struct CRSMatrix
+ * Represents a sparse matrix in Compressed Row Storage (CRS) format.
+ */
 typedef struct {
-    double* values;  // None_zero values
+    double* values;     // None_zero values
     size_t* col_idx;    // Column indices of non-zero values
     size_t* row_ptr;    // Row pointers
-    size_t nnz;      // Number of non-zero elements
-    size_t rows;     // Number of row in the matrix
-    size_t cols;     // Number of columns in the matrix
+    size_t nnz;         // Number of non-zero elements
+    size_t rows;        // Number of row in the matrix
+    size_t cols;        // Number of columns in the matrix
 } CRSMatrix;
 
 // Function to initialize CRS from dense matrix (C function)
